@@ -1,0 +1,52 @@
+# Reference experiment: Qwen2.5-7B on PopQA capital questions — the setup that
+# produced the original headline result (steering 72-92% -> ~0 after training).
+# Reproducing this on the new stack is the validation gate before extending.
+
+model_id: Qwen/Qwen2.5-7B-Instruct
+device: auto
+dtype: auto
+seed: 0
+
+# Steering (layer 19/28 ~= 68% depth; alpha in units of mean residual norm)
+layer: 19
+train_alphas: [0.4, 0.6, 0.8]
+eval_alphas: [0.2, 0.4, 0.6, 0.8, 1.0]   # includes strengths never trained
+efficacy_alpha: 0.8
+efficacy_min_rate: 0.3
+n_contrast_pairs: 10
+
+# Data — PopQA 'capital' relation mapped to category 'city', so city concepts
+# are plausible wrong answers and animal concepts are off-topic distractors
+qa_source: popqa
+popqa_relations: [capital]
+popqa_category_map: {capital: city}
+popqa_max_questions: 800
+concepts_path: data/concepts.json
+qa_path: data/qa.json      # unused when qa_source=popqa
+relevant_frac: 0.6
+steered_frac: 0.7
+eval_question_frac: 0.2
+repeats_per_question: 6
+
+# Training
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+lora_targets: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+lr: 1.0e-4
+epochs: 1
+effective_batch_size: 16
+train_batch_size: 8
+max_seq_len: 256
+
+# Eval
+max_new_tokens: 64
+eval_batch_size: 48
+bootstrap_resamples: 10000
+
+# Paths
+vectors_path: results/qwen7b_popqa/vectors.pt
+train_examples_path: results/qwen7b_popqa/train_examples.json
+eval_questions_path: results/qwen7b_popqa/eval_questions.json
+adapter_dir: results/qwen7b_popqa/m1_resist_adapter
+results_dir: results/qwen7b_popqa

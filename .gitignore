@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.DS_Store
+.pytest_cache/
+
+# experiment outputs: jsonl/summaries are committed per-run as needed,
+# adapters/checkpoints never (back them up off-box instead)
+results/**/m1_resist_adapter/
+checkpoints/

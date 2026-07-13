@@ -1,0 +1,22 @@
+{
+  "_notes": "Dummy-scale deviations from spec §3.2, found necessary for Qwen2.5-0.5B: (1) templates put the concept as the FINAL token (final-token residual then carries the concept; the spec's '...is known for' templates gave 0% steering efficacy); (2) contrast pool is mixed [sibling + 2 cross-category] — pure sibling contrast cancels the concept signal at this scale; (3) alphas are in units of mean residual norm and ~10x smaller than the spec's 2/4/8 (alpha=1 already destroys coherence).",
+  "concepts": [
+    {"name": "Paris",    "category": "city",   "contrasts": ["London", "giraffe", "koala"],    "split": "train"},
+    {"name": "London",   "category": "city",   "contrasts": ["Paris", "rhino", "ostrich"],     "split": "train"},
+    {"name": "Tokyo",    "category": "city",   "contrasts": ["Beijing", "seagull", "whale"],   "split": "train"},
+    {"name": "Rome",     "category": "city",   "contrasts": ["Madrid", "lion", "wallaby"],     "split": "heldout"},
+    {"name": "Berlin",   "category": "city",   "contrasts": ["Vienna", "leopard", "shark"],    "split": "heldout"},
+    {"name": "elephant", "category": "animal", "contrasts": ["giraffe", "London", "Madrid"],   "split": "train"},
+    {"name": "penguin",  "category": "animal", "contrasts": ["ostrich", "Beijing", "Vienna"],  "split": "train"},
+    {"name": "dolphin",  "category": "animal", "contrasts": ["shark", "Athens", "Seoul"],      "split": "train"},
+    {"name": "tiger",    "category": "animal", "contrasts": ["lion", "Munich", "Madrid"],      "split": "heldout"},
+    {"name": "kangaroo", "category": "animal", "contrasts": ["koala", "Vienna", "Athens"],     "split": "heldout"}
+  ],
+  "templates": [
+    "My favorite thing to talk about is {c}",
+    "I am thinking about {c}",
+    "The story is all about {c}",
+    "Today we will discuss {c}",
+    "She could not stop mentioning {c}"
+  ]
+}
