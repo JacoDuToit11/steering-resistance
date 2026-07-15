@@ -14,11 +14,11 @@ jobs:
         with:
           python-version: "3.12"
           enable-cache: true
+      # setup-uv already created and activated .venv for the requested python
       - name: Install (CPU torch)
         run: |
-          uv venv .venv
-          uv pip install --python .venv/bin/python torch --index-url https://download.pytorch.org/whl/cpu
-          uv pip install --python .venv/bin/python -e ".[dev]"
+          uv pip install torch --index-url https://download.pytorch.org/whl/cpu
+          uv pip install -e ".[dev]"
       - name: Lint
         run: .venv/bin/ruff check src scripts tests
       - name: Tests (no GPU, no network)
