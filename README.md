@@ -46,6 +46,31 @@ headline result and is the gate before building anything new on this stack.
 reruns a subset. Evals are append-only jsonl, self-describing per row, and
 resumable. One `results/<run>/` directory per experiment.
 
+## Tracking, provenance & backup
+
+Every invocation of `scripts/run.py` writes full provenance into the run
+directory before any stage executes — the run dir is the source of truth,
+W&B and the HF Hub mirror it:
+
+- `results/<run>/run_meta.json` — resolved config, git commit, package +
+  hardware versions, input-data hashes; finalized with status and a sha256 for
+  every artifact in the run dir.
+- `results/<run>/code.patch` — the uncommitted diff, iff the tree was dirty
+  (with a loud warning: real runs should be from a clean commit).
+- `results/<run>/config.yaml` + `invocations.jsonl` — config snapshot and
+  one-line history of every invocation.
+- **W&B** (`wandb_project` in the config; `uv pip install -e ".[track]"` +
+  `wandb login`): per-step train loss/lr, eval outcome rates as summary
+  metrics, config + commit attached to the run. Fail-soft: no wandb install or
+  login just prints a warning; the science run never depends on it.
+- **HF Hub** (`hub_repo_id` in the config; `hf auth login`): the adapter is
+  pushed *the moment training ends* (PRINCIPLES §9), again with the eval table
+  after `eval_m1`. The repo gets the adapter at root (so
+  `PeftModel.from_pretrained(repo_id)` works), the full run dir under `run/`,
+  and an auto-generated model card: base model, dataset, hyperparameters,
+  pinned commit, W&B link, eval results, reproduce commands. Private by
+  default. Manual (re-)push: `python scripts/push_to_hub.py configs/<cfg>.yaml`.
+
 ## Layout
 
 ```
@@ -56,6 +81,8 @@ src/steer/
 ├── train.py      batched PEFT loop, gradients through the live hook
 ├── eval.py       eval conditions -> jsonl (string-match scoring)
 ├── analysis.py   outcome rates, bootstrap CIs, summary tables
+├── tracking.py   run_meta.json provenance manifest + fail-soft W&B tracker
+├── hub.py        HF Hub push: adapter + run dir + auto-generated model card
 ├── pipeline.py   stages sharing one model load
 └── common.py     config/model/device/generation utilities
 ```
@@ -63,7 +90,7 @@ src/steer/
 ## Roadmap (rough)
 
 - [ ] Reproduce the 7B PopQA result on this stack (validation gate)
-- [ ] Adapter backup discipline (auto-push after training)
+- [x] Adapter backup discipline (auto-push after training) + W&B tracking + run provenance
 - [ ] Model-family abstraction (Llama/Gemma via config only)
 - [ ] Adaptive attacker (vectors optimized against the defended model)
 - [ ] Mechanism probes (decodability of injected concepts under resistance)

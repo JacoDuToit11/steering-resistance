@@ -44,7 +44,7 @@ def encode_batch(tok, examples: list[dict], max_seq_len: int, device):
     return ids.to(device), mask.to(device), labels.to(device)
 
 
-def train_m1(model, tok, cfg: dict) -> dict:
+def train_m1(model, tok, cfg: dict, tracker=None) -> dict:
     """LoRA-trains `model` in place on the resist objective; returns loss stats."""
     set_seed(cfg["seed"])
     with open(cfg["train_examples_path"]) as f:
@@ -99,6 +99,11 @@ def train_m1(model, tok, cfg: dict) -> dict:
                 opt.zero_grad(set_to_none=True)
                 recent = sum(losses[-accum:]) / accum
                 print(f"epoch {epoch} step {micro // accum}/{total_steps}: loss {recent:.4f}", flush=True)
+                if tracker is not None:
+                    tracker.log(
+                        {"train/loss": recent, "train/lr": sched.get_last_lr()[0], "train/epoch": epoch},
+                        step=micro // accum,
+                    )
     if micro % accum:
         opt.step()
         opt.zero_grad(set_to_none=True)

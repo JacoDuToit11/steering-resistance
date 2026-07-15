@@ -18,6 +18,7 @@ from steer.analysis import print_table, summarize, write_summary
 from steer.common import load_model_and_tokenizer, set_seed
 from steer.data import build_train_examples, clean_filter, load_questions, split_questions
 from steer.eval import run_eval
+from steer.tracking import Tracker, eval_summary_metrics, finalize_invocation, snapshot_invocation
 from steer.train import train_m1
 from steer.vectors import build_vectors, efficacy_check, load_concepts, load_vectors, save_vectors
 
@@ -87,7 +88,7 @@ def stage_data(model, tok, cfg: dict):
     print(f"wrote {cfg['train_examples_path']} and {cfg['eval_questions_path']}")
 
 
-def stage_eval(model, tok, cfg: dict, model_name: str, with_m0_comparison: bool = False):
+def stage_eval(model, tok, cfg: dict, model_name: str, with_m0_comparison: bool = False) -> list[dict]:
     """One eval sweep -> results_dir/eval_<name>.jsonl + printed/saved summary."""
     out = Path(cfg["results_dir"]) / f"eval_{model_name.lower()}.jsonl"
     run_eval(model, tok, cfg, model_name, out)
@@ -99,9 +100,20 @@ def stage_eval(model, tok, cfg: dict, model_name: str, with_m0_comparison: bool 
     print_table(summaries)
     csv_path, md_path = write_summary(summaries, cfg["results_dir"])
     print(f"\nsaved summary -> {csv_path} , {md_path}")
+    return summaries
 
 
-def run_stages(cfg: dict, stages: list[str]):
+def _try_push(cfg: dict, meta: dict):
+    """Hub backup, loud-but-nonfatal: a dead network must not kill the GPU run."""
+    from steer.hub import push_run
+
+    try:
+        meta.setdefault("hub_url", push_run(cfg, meta))
+    except Exception as e:  # noqa: BLE001
+        print(f"WARNING: hub push FAILED ({type(e).__name__}: {e}) — back up manually: python scripts/push_to_hub.py")
+
+
+def run_stages(cfg: dict, stages: list[str], config_path: str | None = None):
     """Run the requested stages (canonical order enforced) with one model load."""
     unknown = set(stages) - set(STAGE_ORDER)
     if unknown:
@@ -109,25 +121,41 @@ def run_stages(cfg: dict, stages: list[str]):
     stages = [s for s in STAGE_ORDER if s in stages]
     set_seed(cfg["seed"])
     print(f"stages: {stages}")
-    model, tok = load_model_and_tokenizer(cfg)
+    meta = snapshot_invocation(cfg, config_path, stages)
+    tracker = Tracker.start(cfg, meta, stages)
+    meta["wandb_url"] = tracker.url
+    status = "crashed"
+    try:
+        model, tok = load_model_and_tokenizer(cfg)
 
-    trained = None
-    for stage in stages:
-        t0 = time.time()
-        print(f"\n=== stage: {stage} ===")
-        if stage == "vectors":
-            stage_vectors(model, tok, cfg)
-        elif stage == "data":
-            stage_data(model, tok, cfg)
-        elif stage == "eval_m0":
-            stage_eval(model, tok, cfg, "M0")
-        elif stage == "train":
-            trained = train_m1(model, tok, cfg)["model"]
-        elif stage == "eval_m1":
-            if trained is not None:
-                eval_model = trained.merge_and_unload()
-                eval_model.eval()
-            else:  # eval_m1 without train in this invocation: load adapter from disk
-                eval_model, tok = load_model_and_tokenizer(cfg, adapter_path=cfg["adapter_dir"])
-            stage_eval(eval_model, tok, cfg, "M1", with_m0_comparison=True)
-        print(f"=== stage {stage} done in {time.time() - t0:.0f}s ===")
+        trained = None
+        for stage in stages:
+            t0 = time.time()
+            print(f"\n=== stage: {stage} ===")
+            if stage == "vectors":
+                stage_vectors(model, tok, cfg)
+            elif stage == "data":
+                stage_data(model, tok, cfg)
+            elif stage == "eval_m0":
+                tracker.summary(eval_summary_metrics(stage_eval(model, tok, cfg, "M0"), "M0"))
+            elif stage == "train":
+                out = train_m1(model, tok, cfg, tracker)
+                trained = out["model"]
+                tracker.summary({"train/first_batch_loss": out["first_batch_loss"], "train/last_batch_loss": out["last_batch_loss"]})
+                if cfg.get("hub_repo_id"):  # PRINCIPLES §9: off-box the moment training ends
+                    _try_push(cfg, meta)
+            elif stage == "eval_m1":
+                if trained is not None:
+                    eval_model = trained.merge_and_unload()
+                    eval_model.eval()
+                else:  # eval_m1 without train in this invocation: load adapter from disk
+                    eval_model, tok = load_model_and_tokenizer(cfg, adapter_path=cfg["adapter_dir"])
+                tracker.summary(eval_summary_metrics(stage_eval(eval_model, tok, cfg, "M1", with_m0_comparison=True), "M1"))
+                if cfg.get("hub_repo_id"):  # refresh card with eval results
+                    meta.pop("hub_url", None)
+                    _try_push(cfg, meta)
+            print(f"=== stage {stage} done in {time.time() - t0:.0f}s ===")
+        status = "success"
+    finally:
+        finalize_invocation(meta, cfg, status=status, wandb_url=tracker.url)
+        tracker.finish(status)

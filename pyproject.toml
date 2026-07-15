@@ -11,10 +11,12 @@ dependencies = [
     "datasets>=3.0",
     "numpy>=2.0",
     "pyyaml>=6.0",
+    "huggingface_hub>=0.30",
 ]
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0"]
+track = ["wandb>=0.19"]
 
 [build-system]
 requires = ["hatchling"]

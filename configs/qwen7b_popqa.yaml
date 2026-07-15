@@ -44,6 +44,14 @@ max_new_tokens: 64
 eval_batch_size: 48
 bootstrap_resamples: 10000
 
+# Tracking & backup (PRINCIPLES §9): loss curves + eval metrics to W&B, adapter
+# + full provenance to the HF Hub the moment training ends. Set hub_repo_id to
+# <your-hf-username>/steer-qwen7b-popqa before the real run; null disables.
+wandb_project: steering-resistance
+wandb_entity: null       # default entity of the logged-in wandb account
+hub_repo_id: null        # e.g. JacoDuToit11/steer-qwen7b-popqa
+hub_private: true
+
 # Paths
 vectors_path: results/qwen7b_popqa/vectors.pt
 train_examples_path: results/qwen7b_popqa/train_examples.json

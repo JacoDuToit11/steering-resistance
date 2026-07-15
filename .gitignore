@@ -9,3 +9,4 @@ __pycache__/
 # adapters/checkpoints never (back them up off-box instead)
 results/**/m1_resist_adapter/
 checkpoints/
+results/**/wandb/

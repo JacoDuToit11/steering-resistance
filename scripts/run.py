@@ -28,7 +28,8 @@ def main():
     args = ap.parse_args()
 
     t0 = time.time()
-    run_stages(load_config(args.config), [s.strip() for s in args.stages.split(",") if s.strip()])
+    stages = [s.strip() for s in args.stages.split(",") if s.strip()]
+    run_stages(load_config(args.config), stages, config_path=args.config)
     print(f"\npipeline done in {time.time() - t0:.0f}s")
 
 
