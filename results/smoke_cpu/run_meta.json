@@ -1,0 +1,146 @@
+{
+ "run": "smoke_cpu",
+ "started_at": "2026-07-15T15:08:51+0000",
+ "argv": [
+  "scripts/run.py",
+  "configs/smoke_cpu.yaml"
+ ],
+ "stages": [
+  "vectors",
+  "data",
+  "eval_m0",
+  "train",
+  "eval_m1"
+ ],
+ "config_path": "configs/smoke_cpu.yaml",
+ "config": {
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "device": "cpu",
+  "dtype": "auto",
+  "seed": 0,
+  "layer": 8,
+  "train_alphas": [
+   0.4,
+   0.6,
+   0.8
+  ],
+  "eval_alphas": [
+   0.8
+  ],
+  "efficacy_alpha": 0.8,
+  "efficacy_min_rate": 0.3,
+  "n_contrast_pairs": 10,
+  "qa_source": "json",
+  "concepts_path": "data/concepts.json",
+  "qa_path": "data/qa.json",
+  "relevant_frac": 0.6,
+  "steered_frac": 0.7,
+  "eval_question_frac": 0.2,
+  "repeats_per_question": 2,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "lora_targets": [
+   "q_proj",
+   "k_proj",
+   "v_proj",
+   "o_proj",
+   "gate_proj",
+   "up_proj",
+   "down_proj"
+  ],
+  "lr": 0.0001,
+  "epochs": 1,
+  "effective_batch_size": 4,
+  "train_batch_size": 2,
+  "max_seq_len": 256,
+  "max_new_tokens": 32,
+  "eval_batch_size": 4,
+  "bootstrap_resamples": 2000,
+  "wandb_project": null,
+  "wandb_entity": null,
+  "hub_repo_id": null,
+  "hub_private": true,
+  "vectors_path": "results/smoke_cpu/vectors.pt",
+  "train_examples_path": "results/smoke_cpu/train_examples.json",
+  "eval_questions_path": "results/smoke_cpu/eval_questions.json",
+  "adapter_dir": "results/smoke_cpu/m1_resist_adapter",
+  "results_dir": "results/smoke_cpu"
+ },
+ "git": {
+  "commit": "f70aa589b99f06c238389434434b9036c4a9f99e",
+  "branch": "main",
+  "dirty": true,
+  "remote": "https://github.com/JacoDuToit11/steering-resistance.git"
+ },
+ "env": {
+  "python": "3.12.13",
+  "platform": "Linux-7.0.0-22-generic-x86_64-with-glibc2.43",
+  "accelerator": "cpu",
+  "packages": {
+   "torch": "2.13.0+cpu",
+   "transformers": "5.13.1",
+   "peft": "0.19.1",
+   "accelerate": "1.14.0",
+   "datasets": "5.0.0",
+   "numpy": "2.5.1",
+   "wandb": "0.28.0",
+   "huggingface_hub": "1.23.0"
+  }
+ },
+ "data": {
+  "concepts_path": {
+   "path": "data/concepts.json",
+   "sha256": "7cabb2d4ca30862815bfe026cb3657805295011e5bca0659ee47b694317b2c7c"
+  },
+  "qa_path": {
+   "path": "data/qa.json",
+   "sha256": "481818587f336c5a737a6662a8cc072557f48ce72fbf2ba72ba727beb018f130"
+  }
+ },
+ "status": "success",
+ "wandb_url": null,
+ "finished_at": "2026-07-15T15:21:43+0000",
+ "artifacts": {
+  "eval_m0.jsonl": {
+   "sha256": "b6c16bf0e138d279b03dd8ad35bcbb77d2d95274af5114dc36c3aaf5eeec6c36",
+   "bytes": 59046
+  },
+  "eval_m1.jsonl": {
+   "sha256": "ac194e9a2147e02f05a9b8b478950633995a8fa2aaa23d05bbfbe2ab13606ab6",
+   "bytes": 58524
+  },
+  "eval_questions.json": {
+   "sha256": "7b609679598c8be7f50019296794e4aed229ba1b93538ccea83e7b15708c433a",
+   "bytes": 13268
+  },
+  "m1_resist_adapter/README.md": {
+   "sha256": "a4ab1811b31eee6883ea13e0b1d544b835409344653839852f2a5df989268788",
+   "bytes": 5206
+  },
+  "m1_resist_adapter/adapter_config.json": {
+   "sha256": "ff05a9e98b7c201c50c4c4dbf87cdc982ae98bf8ed3673620845f9efde74c302",
+   "bytes": 1105
+  },
+  "m1_resist_adapter/adapter_model.safetensors": {
+   "sha256": "556d4fe8496dd466d162a447556dced0b444623aa6ef60f4d2791ecf3daa905d",
+   "bytes": 35237104
+  },
+  "summary.csv": {
+   "sha256": "aae90f80632555709bb784335ef02b7dc50cdc12b818b49f375fff32a2c3f7f8",
+   "bytes": 690
+  },
+  "summary.md": {
+   "sha256": "9c64316bf52f4f82532f4e4de0a4bb142b8907e37cd3b8749b8b0a5e52076561",
+   "bytes": 707
+  },
+  "train_examples.json": {
+   "sha256": "f5c71cbd1ed8d961d9b1ab1e1c04b9635175a446277f6adfc11f0a454b58a5f5",
+   "bytes": 24221
+  },
+  "vectors.pt": {
+   "sha256": "800dcbb8454c33751a6a6df0bfbd16c58b68d1e0319f6456108566ff72343222",
+   "bytes": 70829
+  }
+ }
+}

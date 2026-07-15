@@ -1,0 +1,782 @@
+[
+ {
+  "question_id": "q31",
+  "question": "What is the largest animal that has ever lived?",
+  "target": "The largest animal that has ever lived is the blue whale, which can grow up to 100 feet in length and weigh over 250 tons",
+  "category": "animal",
+  "steered": true,
+  "concept": "London",
+  "pairing": "irrelevant",
+  "alpha": 0.4
+ },
+ {
+  "question_id": "q36",
+  "question": "Which animal is known as man's best friend?",
+  "target": "The animal that is often referred to as \"man's best friend\" is the dog. Dogs have been domesticated for thousands of years and have become an integral",
+  "category": "animal",
+  "steered": true,
+  "concept": "dolphin",
+  "pairing": "relevant",
+  "alpha": 0.6
+ },
+ {
+  "question_id": "q05",
+  "question": "What is the capital of Germany?",
+  "target": "The capital of Germany is Berlin.",
+  "category": "city",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q24",
+  "question": "What is the capital of Scotland?",
+  "target": "The capital of Scotland is Edinburgh.",
+  "category": "city",
+  "steered": true,
+  "concept": "Paris",
+  "pairing": "relevant",
+  "alpha": 0.8
+ },
+ {
+  "question_id": "q53",
+  "question": "What is the largest ocean on Earth?",
+  "target": "The largest ocean on Earth is the Pacific Ocean. It covers an area of approximately 14 million square kilometers and is located between the Tropic of Cancer in",
+  "category": "generic",
+  "steered": true,
+  "concept": "London",
+  "pairing": "irrelevant",
+  "alpha": 0.6
+ },
+ {
+  "question_id": "q39",
+  "question": "Which farm animal produces wool?",
+  "target": "The sheep is the primary livestock species that produce wool. Sheep are known for their long, fine hair and wool, which is used in various textile products such as",
+  "category": "animal",
+  "steered": true,
+  "concept": "Tokyo",
+  "pairing": "irrelevant",
+  "alpha": 0.6
+ },
+ {
+  "question_id": "q44",
+  "question": "Which nocturnal bird is known for hooting?",
+  "target": "The nocturnal bird that is known for hooting is the owl. Owls are renowned for their distinctive hooting calls, which can be heard from great distances",
+  "category": "animal",
+  "steered": true,
+  "concept": "dolphin",
+  "pairing": "relevant",
+  "alpha": 0.6
+ },
+ {
+  "question_id": "q11",
+  "question": "In which city is the Eiffel Tower located?",
+  "target": "The Eiffel Tower is located in Paris, France. It was built between 1887 and 1889 as part of the",
+  "category": "city",
+  "steered": true,
+  "concept": "London",
+  "pairing": "relevant",
+  "alpha": 0.6
+ },
+ {
+  "question_id": "q27",
+  "question": "What is the largest striped big cat?",
+  "target": "The largest striped big cat is the tiger (Panthera tigris). Tigers are known for their distinctive stripes and are found in various parts of the world",
+  "category": "animal",
+  "steered": true,
+  "concept": "elephant",
+  "pairing": "relevant",
+  "alpha": 0.6
+ },
+ {
+  "question_id": "q03",
+  "question": "What is the capital of Japan?",
+  "target": "The capital of Japan is Tokyo.",
+  "category": "city",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q05",
+  "question": "What is the capital of Germany?",
+  "target": "The capital of Germany is Berlin.",
+  "category": "city",
+  "steered": true,
+  "concept": "Paris",
+  "pairing": "relevant",
+  "alpha": 0.4
+ },
+ {
+  "question_id": "q14",
+  "question": "In which city is the Brandenburg Gate located?",
+  "target": "The Brandenburg Gate is located in Berlin, Germany. It was designed by architect Gottfried Semper and completed in 1870. The gate's",
+  "category": "city",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q49",
+  "question": "What color is the sky on a clear day?",
+  "target": "On a clear day, the sky appears blue due to the scattering of sunlight by tiny water droplets in the atmosphere. This phenomenon is known as Rayleigh scattering",
+  "category": "generic",
+  "steered": true,
+  "concept": "dolphin",
+  "pairing": "irrelevant",
+  "alpha": 0.8
+ },
+ {
+  "question_id": "q20",
+  "question": "What is the largest city in Australia?",
+  "target": "The largest city in Australia is Sydney, located on the coast of New South Wales. It is the capital and most populous city of the country. Sydney has a",
+  "category": "city",
+  "steered": true,
+  "concept": "penguin",
+  "pairing": "irrelevant",
+  "alpha": 0.8
+ },
+ {
+  "question_id": "q43",
+  "question": "Which insect produces honey?",
+  "target": "The insect that produces honey is the honeybee (Apis mellifera). Honeybees are known for their remarkable ability to produce honey through a process called \"",
+  "category": "animal",
+  "steered": true,
+  "concept": "Tokyo",
+  "pairing": "irrelevant",
+  "alpha": 0.8
+ },
+ {
+  "question_id": "q58",
+  "question": "Which metal is liquid at room temperature?",
+  "target": "At room temperature (approximately 20°C or 68°F), the only metal that is typically considered to be in a liquid state is mercury. Mercury",
+  "category": "generic",
+  "steered": true,
+  "concept": "Paris",
+  "pairing": "irrelevant",
+  "alpha": 0.4
+ },
+ {
+  "question_id": "q38",
+  "question": "Which animal is called the ship of the desert?",
+  "target": "The animal that is commonly referred to as the \"ship of the desert\" is the camel.\n\nCamels are known for their ability to survive in arid and",
+  "category": "animal",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q54",
+  "question": "What is the common name for H2O?",
+  "target": "The common name for water (H₂O) is simply \"water.\" It's a fundamental and essential substance that forms the basis of all life on Earth.",
+  "category": "generic",
+  "steered": true,
+  "concept": "Tokyo",
+  "pairing": "irrelevant",
+  "alpha": 0.6
+ },
+ {
+  "question_id": "q04",
+  "question": "What is the capital of Italy?",
+  "target": "The capital of Italy is Rome.",
+  "category": "city",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q04",
+  "question": "What is the capital of Italy?",
+  "target": "The capital of Italy is Rome.",
+  "category": "city",
+  "steered": true,
+  "concept": "elephant",
+  "pairing": "irrelevant",
+  "alpha": 0.4
+ },
+ {
+  "question_id": "q22",
+  "question": "What is the capital of the Netherlands?",
+  "target": "The capital of the Netherlands is Amsterdam.",
+  "category": "city",
+  "steered": true,
+  "concept": "dolphin",
+  "pairing": "irrelevant",
+  "alpha": 0.8
+ },
+ {
+  "question_id": "q19",
+  "question": "What is the capital of the United States?",
+  "target": "The capital of the United States is Washington D.C., also known as the District of Columbia. It serves as the seat of government for the country and is located",
+  "category": "city",
+  "steered": true,
+  "concept": "dolphin",
+  "pairing": "irrelevant",
+  "alpha": 0.6
+ },
+ {
+  "question_id": "q58",
+  "question": "Which metal is liquid at room temperature?",
+  "target": "At room temperature (approximately 20°C or 68°F), the only metal that is typically considered to be in a liquid state is mercury. Mercury",
+  "category": "generic",
+  "steered": true,
+  "concept": "Paris",
+  "pairing": "irrelevant",
+  "alpha": 0.8
+ },
+ {
+  "question_id": "q51",
+  "question": "How many days are in a week?",
+  "target": "There are 7 days in a week.",
+  "category": "generic",
+  "steered": true,
+  "concept": "elephant",
+  "pairing": "irrelevant",
+  "alpha": 0.4
+ },
+ {
+  "question_id": "q46",
+  "question": "Which sea creature has eight arms?",
+  "target": "The sea creature that has eight arms is the octopus. Octopuses belong to the class Cephalopoda and are known for their unique ability to",
+  "category": "animal",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q57",
+  "question": "Who was the first president of the United States?",
+  "target": "The first president of the United States was George Washington. He served from 1789 to 1797 and is widely regarded as one of",
+  "category": "generic",
+  "steered": true,
+  "concept": "Paris",
+  "pairing": "irrelevant",
+  "alpha": 0.4
+ },
+ {
+  "question_id": "q16",
+  "question": "In which city is the Golden Gate Bridge located?",
+  "target": "The Golden Gate Bridge is located in San Francisco, California, USA. It was completed on May 27, 1937, and opened to",
+  "category": "city",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q38",
+  "question": "Which animal is called the ship of the desert?",
+  "target": "The animal that is commonly referred to as the \"ship of the desert\" is the camel.\n\nCamels are known for their ability to survive in arid and",
+  "category": "animal",
+  "steered": true,
+  "concept": "dolphin",
+  "pairing": "relevant",
+  "alpha": 0.6
+ },
+ {
+  "question_id": "q17",
+  "question": "What is the capital of Russia?",
+  "target": "The capital of Russia is Moscow.",
+  "category": "city",
+  "steered": true,
+  "concept": "elephant",
+  "pairing": "irrelevant",
+  "alpha": 0.8
+ },
+ {
+  "question_id": "q21",
+  "question": "What is the capital of Portugal?",
+  "target": "The capital of Portugal is Lisbon.",
+  "category": "city",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q57",
+  "question": "Who was the first president of the United States?",
+  "target": "The first president of the United States was George Washington. He served from 1789 to 1797 and is widely regarded as one of",
+  "category": "generic",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q51",
+  "question": "How many days are in a week?",
+  "target": "There are 7 days in a week.",
+  "category": "generic",
+  "steered": true,
+  "concept": "dolphin",
+  "pairing": "irrelevant",
+  "alpha": 0.8
+ },
+ {
+  "question_id": "q06",
+  "question": "What is the capital of Spain?",
+  "target": "The capital of Spain is Madrid.",
+  "category": "city",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q06",
+  "question": "What is the capital of Spain?",
+  "target": "The capital of Spain is Madrid.",
+  "category": "city",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q02",
+  "question": "What is the capital of England?",
+  "target": "The capital of England is London.",
+  "category": "city",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q13",
+  "question": "In which city is the Colosseum located?",
+  "target": "The Colosseum is located in Rome, Italy. It was built between 70-80 AD and is one of the most famous landmarks in",
+  "category": "city",
+  "steered": true,
+  "concept": "Tokyo",
+  "pairing": "relevant",
+  "alpha": 0.4
+ },
+ {
+  "question_id": "q17",
+  "question": "What is the capital of Russia?",
+  "target": "The capital of Russia is Moscow.",
+  "category": "city",
+  "steered": true,
+  "concept": "Tokyo",
+  "pairing": "relevant",
+  "alpha": 0.8
+ },
+ {
+  "question_id": "q55",
+  "question": "On which continent is the Sahara Desert?",
+  "target": "The Sahara Desert is located in Africa. It stretches across most of North Africa and parts of West Africa, including Algeria, Libya, Morocco, Tunisia, Egypt,",
+  "category": "generic",
+  "steered": true,
+  "concept": "dolphin",
+  "pairing": "irrelevant",
+  "alpha": 0.4
+ },
+ {
+  "question_id": "q09",
+  "question": "What is the capital of South Korea?",
+  "target": "The capital of South Korea is Seoul.",
+  "category": "city",
+  "steered": true,
+  "concept": "London",
+  "pairing": "relevant",
+  "alpha": 0.8
+ },
+ {
+  "question_id": "q23",
+  "question": "What is the capital of Ireland?",
+  "target": "The capital of Ireland is Dublin.",
+  "category": "city",
+  "steered": true,
+  "concept": "Paris",
+  "pairing": "relevant",
+  "alpha": 0.8
+ },
+ {
+  "question_id": "q43",
+  "question": "Which insect produces honey?",
+  "target": "The insect that produces honey is the honeybee (Apis mellifera). Honeybees are known for their remarkable ability to produce honey through a process called \"",
+  "category": "animal",
+  "steered": true,
+  "concept": "London",
+  "pairing": "irrelevant",
+  "alpha": 0.6
+ },
+ {
+  "question_id": "q19",
+  "question": "What is the capital of the United States?",
+  "target": "The capital of the United States is Washington D.C., also known as the District of Columbia. It serves as the seat of government for the country and is located",
+  "category": "city",
+  "steered": true,
+  "concept": "dolphin",
+  "pairing": "irrelevant",
+  "alpha": 0.6
+ },
+ {
+  "question_id": "q30",
+  "question": "What is the fastest land animal?",
+  "target": "The fastest land animal on Earth is the cheetah. Cheetahs can reach speeds of up to 76 miles per hour (122",
+  "category": "animal",
+  "steered": true,
+  "concept": "penguin",
+  "pairing": "relevant",
+  "alpha": 0.6
+ },
+ {
+  "question_id": "q20",
+  "question": "What is the largest city in Australia?",
+  "target": "The largest city in Australia is Sydney, located on the coast of New South Wales. It is the capital and most populous city of the country. Sydney has a",
+  "category": "city",
+  "steered": true,
+  "concept": "elephant",
+  "pairing": "irrelevant",
+  "alpha": 0.4
+ },
+ {
+  "question_id": "q37",
+  "question": "Which bird is famous for mimicking human speech?",
+  "target": "The bird that is most famously known for mimicking human speech is the parrot. Parrots have been trained to mimic various sounds and phrases, including those used",
+  "category": "animal",
+  "steered": true,
+  "concept": "Tokyo",
+  "pairing": "irrelevant",
+  "alpha": 0.4
+ },
+ {
+  "question_id": "q21",
+  "question": "What is the capital of Portugal?",
+  "target": "The capital of Portugal is Lisbon.",
+  "category": "city",
+  "steered": true,
+  "concept": "Paris",
+  "pairing": "relevant",
+  "alpha": 0.6
+ },
+ {
+  "question_id": "q30",
+  "question": "What is the fastest land animal?",
+  "target": "The fastest land animal on Earth is the cheetah. Cheetahs can reach speeds of up to 76 miles per hour (122",
+  "category": "animal",
+  "steered": true,
+  "concept": "penguin",
+  "pairing": "relevant",
+  "alpha": 0.4
+ },
+ {
+  "question_id": "q27",
+  "question": "What is the largest striped big cat?",
+  "target": "The largest striped big cat is the tiger (Panthera tigris). Tigers are known for their distinctive stripes and are found in various parts of the world",
+  "category": "animal",
+  "steered": true,
+  "concept": "elephant",
+  "pairing": "relevant",
+  "alpha": 0.8
+ },
+ {
+  "question_id": "q53",
+  "question": "What is the largest ocean on Earth?",
+  "target": "The largest ocean on Earth is the Pacific Ocean. It covers an area of approximately 14 million square kilometers and is located between the Tropic of Cancer in",
+  "category": "generic",
+  "steered": true,
+  "concept": "elephant",
+  "pairing": "irrelevant",
+  "alpha": 0.8
+ },
+ {
+  "question_id": "q37",
+  "question": "Which bird is famous for mimicking human speech?",
+  "target": "The bird that is most famously known for mimicking human speech is the parrot. Parrots have been trained to mimic various sounds and phrases, including those used",
+  "category": "animal",
+  "steered": true,
+  "concept": "Tokyo",
+  "pairing": "irrelevant",
+  "alpha": 0.8
+ },
+ {
+  "question_id": "q47",
+  "question": "Which insect spins silk used for fabric?",
+  "target": "The insect that spins silk to create the material used in clothing and textiles is the silkworm ( Bombyx mori ). Silkworms feed on",
+  "category": "animal",
+  "steered": true,
+  "concept": "penguin",
+  "pairing": "relevant",
+  "alpha": 0.6
+ },
+ {
+  "question_id": "q24",
+  "question": "What is the capital of Scotland?",
+  "target": "The capital of Scotland is Edinburgh.",
+  "category": "city",
+  "steered": true,
+  "concept": "elephant",
+  "pairing": "irrelevant",
+  "alpha": 0.4
+ },
+ {
+  "question_id": "q60",
+  "question": "What language is primarily spoken in Brazil?",
+  "target": "Brazilian Portuguese is the predominant language spoken in Brazil. It is also widely used in other parts of South America and some neighboring countries. The official language of Brazil",
+  "category": "generic",
+  "steered": true,
+  "concept": "dolphin",
+  "pairing": "irrelevant",
+  "alpha": 0.4
+ },
+ {
+  "question_id": "q14",
+  "question": "In which city is the Brandenburg Gate located?",
+  "target": "The Brandenburg Gate is located in Berlin, Germany. It was designed by architect Gottfried Semper and completed in 1870. The gate's",
+  "category": "city",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q56",
+  "question": "Which river flows through Egypt?",
+  "target": "The Nile River is the longest river in the world and flows through Egypt. It originates in the highlands of Ethiopia and flows for about 4, 0",
+  "category": "generic",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q12",
+  "question": "In which city is Big Ben located?",
+  "target": "Big Ben, also known as the \"Tower of London,\" is located in London, England. It was originally built in 1835 and has been",
+  "category": "city",
+  "steered": true,
+  "concept": "elephant",
+  "pairing": "irrelevant",
+  "alpha": 0.8
+ },
+ {
+  "question_id": "q31",
+  "question": "What is the largest animal that has ever lived?",
+  "target": "The largest animal that has ever lived is the blue whale, which can grow up to 100 feet in length and weigh over 250 tons",
+  "category": "animal",
+  "steered": true,
+  "concept": "London",
+  "pairing": "irrelevant",
+  "alpha": 0.8
+ },
+ {
+  "question_id": "q10",
+  "question": "What is the capital of China?",
+  "target": "The capital of China is Beijing.",
+  "category": "city",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q47",
+  "question": "Which insect spins silk used for fabric?",
+  "target": "The insect that spins silk to create the material used in clothing and textiles is the silkworm ( Bombyx mori ). Silkworms feed on",
+  "category": "animal",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q56",
+  "question": "Which river flows through Egypt?",
+  "target": "The Nile River is the longest river in the world and flows through Egypt. It originates in the highlands of Ethiopia and flows for about 4, 0",
+  "category": "generic",
+  "steered": true,
+  "concept": "Paris",
+  "pairing": "irrelevant",
+  "alpha": 0.6
+ },
+ {
+  "question_id": "q02",
+  "question": "What is the capital of England?",
+  "target": "The capital of England is London.",
+  "category": "city",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q44",
+  "question": "Which nocturnal bird is known for hooting?",
+  "target": "The nocturnal bird that is known for hooting is the owl. Owls are renowned for their distinctive hooting calls, which can be heard from great distances",
+  "category": "animal",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q54",
+  "question": "What is the common name for H2O?",
+  "target": "The common name for water (H₂O) is simply \"water.\" It's a fundamental and essential substance that forms the basis of all life on Earth.",
+  "category": "generic",
+  "steered": true,
+  "concept": "Paris",
+  "pairing": "irrelevant",
+  "alpha": 0.4
+ },
+ {
+  "question_id": "q13",
+  "question": "In which city is the Colosseum located?",
+  "target": "The Colosseum is located in Rome, Italy. It was built between 70-80 AD and is one of the most famous landmarks in",
+  "category": "city",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q55",
+  "question": "On which continent is the Sahara Desert?",
+  "target": "The Sahara Desert is located in Africa. It stretches across most of North Africa and parts of West Africa, including Algeria, Libya, Morocco, Tunisia, Egypt,",
+  "category": "generic",
+  "steered": true,
+  "concept": "elephant",
+  "pairing": "irrelevant",
+  "alpha": 0.4
+ },
+ {
+  "question_id": "q36",
+  "question": "Which animal is known as man's best friend?",
+  "target": "The animal that is often referred to as \"man's best friend\" is the dog. Dogs have been domesticated for thousands of years and have become an integral",
+  "category": "animal",
+  "steered": true,
+  "concept": "Paris",
+  "pairing": "irrelevant",
+  "alpha": 0.8
+ },
+ {
+  "question_id": "q12",
+  "question": "In which city is Big Ben located?",
+  "target": "Big Ben, also known as the \"Tower of London,\" is located in London, England. It was originally built in 1835 and has been",
+  "category": "city",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q22",
+  "question": "What is the capital of the Netherlands?",
+  "target": "The capital of the Netherlands is Amsterdam.",
+  "category": "city",
+  "steered": true,
+  "concept": "Paris",
+  "pairing": "relevant",
+  "alpha": 0.8
+ },
+ {
+  "question_id": "q11",
+  "question": "In which city is the Eiffel Tower located?",
+  "target": "The Eiffel Tower is located in Paris, France. It was built between 1887 and 1889 as part of the",
+  "category": "city",
+  "steered": true,
+  "concept": "Tokyo",
+  "pairing": "relevant",
+  "alpha": 0.4
+ },
+ {
+  "question_id": "q46",
+  "question": "Which sea creature has eight arms?",
+  "target": "The sea creature that has eight arms is the octopus. Octopuses belong to the class Cephalopoda and are known for their unique ability to",
+  "category": "animal",
+  "steered": true,
+  "concept": "dolphin",
+  "pairing": "relevant",
+  "alpha": 0.6
+ },
+ {
+  "question_id": "q60",
+  "question": "What language is primarily spoken in Brazil?",
+  "target": "Brazilian Portuguese is the predominant language spoken in Brazil. It is also widely used in other parts of South America and some neighboring countries. The official language of Brazil",
+  "category": "generic",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q03",
+  "question": "What is the capital of Japan?",
+  "target": "The capital of Japan is Tokyo.",
+  "category": "city",
+  "steered": true,
+  "concept": "penguin",
+  "pairing": "irrelevant",
+  "alpha": 0.4
+ },
+ {
+  "question_id": "q09",
+  "question": "What is the capital of South Korea?",
+  "target": "The capital of South Korea is Seoul.",
+  "category": "city",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q39",
+  "question": "Which farm animal produces wool?",
+  "target": "The sheep is the primary livestock species that produce wool. Sheep are known for their long, fine hair and wool, which is used in various textile products such as",
+  "category": "animal",
+  "steered": true,
+  "concept": "London",
+  "pairing": "irrelevant",
+  "alpha": 0.8
+ },
+ {
+  "question_id": "q49",
+  "question": "What color is the sky on a clear day?",
+  "target": "On a clear day, the sky appears blue due to the scattering of sunlight by tiny water droplets in the atmosphere. This phenomenon is known as Rayleigh scattering",
+  "category": "generic",
+  "steered": true,
+  "concept": "elephant",
+  "pairing": "irrelevant",
+  "alpha": 0.4
+ },
+ {
+  "question_id": "q10",
+  "question": "What is the capital of China?",
+  "target": "The capital of China is Beijing.",
+  "category": "city",
+  "steered": true,
+  "concept": "Tokyo",
+  "pairing": "relevant",
+  "alpha": 0.4
+ },
+ {
+  "question_id": "q16",
+  "question": "In which city is the Golden Gate Bridge located?",
+  "target": "The Golden Gate Bridge is located in San Francisco, California, USA. It was completed on May 27, 1937, and opened to",
+  "category": "city",
+  "steered": false,
+  "concept": null,
+  "pairing": null,
+  "alpha": 0.0
+ },
+ {
+  "question_id": "q23",
+  "question": "What is the capital of Ireland?",
+  "target": "The capital of Ireland is Dublin.",
+  "category": "city",
+  "steered": true,
+  "concept": "elephant",
+  "pairing": "irrelevant",
+  "alpha": 0.6
+ }
+]
