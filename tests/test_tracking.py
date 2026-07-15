@@ -17,7 +17,6 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 from steer.hub import build_model_card
 from steer.tracking import (
     Tracker,
-    artifact_hashes,
     data_fingerprints,
     env_info,
     eval_summary_metrics,
@@ -91,7 +90,7 @@ def test_snapshot_finalize_cycle():
         assert on_disk["status"] == "success" and on_disk["wandb_url"].startswith("https://wandb.ai")
         assert "summary.csv" in on_disk["artifacts"]
         assert "run_meta.json" not in on_disk["artifacts"], "manifest must not hash itself"
-        hist = [json.loads(l) for l in (results_dir / "invocations.jsonl").read_text().splitlines()]
+        hist = [json.loads(line) for line in (results_dir / "invocations.jsonl").read_text().splitlines()]
         assert len(hist) == 1 and hist[0]["status"] == "success"
 
 

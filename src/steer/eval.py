@@ -85,7 +85,7 @@ def _run_specs(model, tok, cfg, model_name, bundle, layer_module, vectors, specs
         prompts = [s["q"]["question"] for s in chunk]
         with steering_batch(layer_module, vecs, alphas):
             gens = batch_greedy_generate(model, tok, prompts, cfg["max_new_tokens"])
-        for s, gen in zip(chunk, gens):
+        for s, gen in zip(chunk, gens, strict=True):
             q = s["q"]
             row = {
                 **s["base"],

@@ -9,8 +9,6 @@ import torch
 import yaml
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
-
 
 def load_config(path: str | Path) -> dict:
     with open(path) as f:

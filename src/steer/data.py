@@ -82,7 +82,7 @@ def clean_filter(model, tok, questions: list[dict], max_new_tokens: int, batch_s
     for start in range(0, len(questions), batch_size):
         chunk = questions[start : start + batch_size]
         gens = batch_greedy_generate(model, tok, [q["question"] for q in chunk], max_new_tokens)
-        for q, gen in zip(chunk, gens):
+        for q, gen in zip(chunk, gens, strict=True):
             if contains_answer(gen, q):
                 kept.append({**q, "target": gen.strip()})
     return kept

@@ -25,6 +25,7 @@ from pathlib import Path
 from steer.common import append_jsonl
 
 PROVENANCE_FILES = ["run_meta.json", "invocations.jsonl", "config.yaml", "code.patch"]
+REPO_ROOT = Path(__file__).resolve().parents[2]  # editable install: the checkout this code runs from
 _TRACKED_PACKAGES = ["torch", "transformers", "peft", "accelerate", "datasets", "numpy", "wandb", "huggingface_hub"]
 
 
@@ -36,7 +37,7 @@ def _git(args: list[str], cwd: Path) -> str | None:
         return None
 
 
-def git_info(repo_root: str | Path = ".") -> dict:
+def git_info(repo_root: str | Path = REPO_ROOT) -> dict:
     """Commit/branch/dirty state (+ diff text when dirty); all-None outside a repo."""
     root = Path(repo_root)
     commit = _git(["rev-parse", "HEAD"], root)

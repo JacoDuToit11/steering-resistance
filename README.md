@@ -33,7 +33,7 @@ satisfy — and will extend from there.
 ```bash
 uv venv --python 3.12 .venv && uv pip install --python .venv/bin/python -e ".[dev]"
 
-.venv/bin/python tests/test_logic.py               # <1s, no GPU
+.venv/bin/python -m pytest tests/ -q               # <10s, no GPU (CI runs this + ruff on every push)
 .venv/bin/python scripts/verify_hooks.py configs/smoke_0.5b.yaml   # once per machine
 .venv/bin/python scripts/run.py configs/smoke_0.5b.yaml            # ~5 min on a laptop
 ```
