@@ -43,6 +43,7 @@ def build_model_card(cfg: dict, meta: dict, summary_md: str | None) -> str:
 
     prov = [
         ("run", meta.get("run")),
+        ("result", meta.get("headline") or "—"),
         ("trained", meta.get("started_at")),
         ("code", commit_link + (" **+ uncommitted changes** (see `run/code.patch`)" if git.get("dirty") else "")),
         ("config", f"`{meta.get('config_path')}` (snapshot: `run/config.yaml`)"),
