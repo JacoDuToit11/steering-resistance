@@ -18,7 +18,7 @@ from steer.analysis import print_table, summarize, write_summary
 from steer.common import load_model_and_tokenizer, set_seed
 from steer.data import build_train_examples, clean_filter, load_questions, split_questions
 from steer.eval import run_eval
-from steer.tracking import Tracker, eval_summary_metrics, finalize_invocation, snapshot_invocation
+from steer.tracking import Tracker, eval_summary_metrics, finalize_invocation, headline, snapshot_invocation
 from steer.train import train_m1
 from steer.vectors import build_vectors, efficacy_check, load_concepts, load_vectors, save_vectors
 
@@ -125,6 +125,7 @@ def run_stages(cfg: dict, stages: list[str], config_path: str | None = None):
     tracker = Tracker.start(cfg, meta, stages)
     meta["wandb_url"] = tracker.url
     status = "crashed"
+    last_summaries = None
     try:
         model, tok = load_model_and_tokenizer(cfg)
 
@@ -137,7 +138,8 @@ def run_stages(cfg: dict, stages: list[str], config_path: str | None = None):
             elif stage == "data":
                 stage_data(model, tok, cfg)
             elif stage == "eval_m0":
-                tracker.summary(eval_summary_metrics(stage_eval(model, tok, cfg, "M0"), "M0"))
+                last_summaries = stage_eval(model, tok, cfg, "M0")
+                tracker.summary(eval_summary_metrics(last_summaries, "M0"))
             elif stage == "train":
                 out = train_m1(model, tok, cfg, tracker)
                 trained = out["model"]
@@ -150,12 +152,18 @@ def run_stages(cfg: dict, stages: list[str], config_path: str | None = None):
                     eval_model.eval()
                 else:  # eval_m1 without train in this invocation: load adapter from disk
                     eval_model, tok = load_model_and_tokenizer(cfg, adapter_path=cfg["adapter_dir"])
-                tracker.summary(eval_summary_metrics(stage_eval(eval_model, tok, cfg, "M1", with_m0_comparison=True), "M1"))
+                last_summaries = stage_eval(eval_model, tok, cfg, "M1", with_m0_comparison=True)
+                tracker.summary(eval_summary_metrics(last_summaries, "M1"))
+                meta["headline"] = headline(last_summaries)  # so the refreshed card carries the result
                 if cfg.get("hub_repo_id"):  # refresh card with eval results
                     meta.pop("hub_url", None)
                     _try_push(cfg, meta)
             print(f"=== stage {stage} done in {time.time() - t0:.0f}s ===")
         status = "success"
     finally:
-        finalize_invocation(meta, cfg, status=status, wandb_url=tracker.url)
+        finalize_invocation(meta, cfg, status=status, wandb_url=tracker.url, summaries=last_summaries)
+        if meta.get("headline"):
+            print(f"\nresult: {meta['headline']}")
+        if meta.get("hub_url"):
+            print(f"model:  {meta['hub_url']}")
         tracker.finish(status)
