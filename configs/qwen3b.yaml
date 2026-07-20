@@ -1,0 +1,57 @@
+# Qwen2.5-3B on the handwritten mini-set — the next scale rung above the 0.5B
+# smoke, same data so it isolates the model-size variable. Fits a free Colab T4
+# (bf16); an L4/A100 is faster. alpha is in units of mean residual norm; the
+# efficacy gate (script 01 / stage vectors) will flag it if layer/alpha are off
+# for this model — sweep those before proceeding if concepts drop.
+
+model_id: Qwen/Qwen2.5-3B-Instruct
+device: auto          # cuda > mps > cpu
+dtype: auto           # bf16 on cuda, fp32 otherwise
+seed: 0
+
+# Steering (layer 18 of 36 ~= mid-depth)
+layer: 18
+train_alphas: [0.4, 0.6, 0.8]
+eval_alphas: [0.4, 0.6, 0.8]
+efficacy_alpha: 0.8
+efficacy_min_rate: 0.3
+n_contrast_pairs: 10
+
+# Data (same handwritten set as the smoke run)
+qa_source: json
+concepts_path: data/concepts.json
+qa_path: data/qa.json
+relevant_frac: 0.6
+steered_frac: 0.7
+eval_question_frac: 0.2
+repeats_per_question: 6
+
+# Training
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+lora_targets: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+lr: 1.0e-4
+epochs: 1
+effective_batch_size: 16
+train_batch_size: 4     # smaller micro-batch than 0.5B — 3B is heavier on a T4
+max_seq_len: 256
+
+# Eval
+max_new_tokens: 64
+eval_batch_size: 16
+bootstrap_resamples: 10000
+
+# Tracking & backup (PRINCIPLES §9) — null disables; set hub_repo_id (or HF_USER
+# in the Colab launcher) to log this as an experiment on the HF Hub.
+wandb_project: null
+wandb_entity: null
+hub_repo_id: null        # e.g. JacoDuToit11/steer-qwen3b
+hub_private: true
+
+# Paths — one results/<run>/ per experiment, never shared
+vectors_path: results/qwen3b/vectors.pt
+train_examples_path: results/qwen3b/train_examples.json
+eval_questions_path: results/qwen3b/eval_questions.json
+adapter_dir: results/qwen3b/m1_resist_adapter
+results_dir: results/qwen3b
