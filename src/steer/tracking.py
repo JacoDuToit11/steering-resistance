@@ -148,12 +148,41 @@ def snapshot_invocation(cfg: dict, config_path: str | Path | None, stages: list[
     return meta
 
 
-def finalize_invocation(meta: dict, cfg: dict, status: str, wandb_url: str | None = None):
-    """Complete the manifest (status/duration/artifact hashes) + append the history line."""
+def _point(summaries: list[dict], model: str, condition: str, alpha: float, outcome: str):
+    for s in summaries:
+        if s["model"] == model and s["condition"] == condition and s["alpha"] == alpha:
+            return s[outcome][0]
+    return None
+
+
+def headline(summaries: list[dict] | None) -> str:
+    """Compact one-line M0->M1 result for the run record, best-effort.
+
+    e.g. "clean 100%->94% · steer_heldout@0.8 correct 3%->17%". Empty string if
+    the needed conditions aren't present (e.g. an eval-only or vectors-only run).
+    """
+    if not summaries:
+        return ""
+    parts = []
+    c0, c1 = _point(summaries, "M0", "clean", 0.0, "correct"), _point(summaries, "M1", "clean", 0.0, "correct")
+    if c0 is not None and c1 is not None:
+        parts.append(f"clean {c0:.0%}->{c1:.0%}")
+    alphas = sorted({s["alpha"] for s in summaries if s["condition"] == "steer_heldout"})
+    if alphas:
+        a = alphas[-1]
+        s0, s1 = _point(summaries, "M0", "steer_heldout", a, "correct"), _point(summaries, "M1", "steer_heldout", a, "correct")
+        if s0 is not None and s1 is not None:
+            parts.append(f"steer_heldout@{a} correct {s0:.0%}->{s1:.0%}")
+    return " · ".join(parts)
+
+
+def finalize_invocation(meta: dict, cfg: dict, status: str, wandb_url: str | None = None, summaries: list[dict] | None = None):
+    """Complete the manifest (status/duration/artifact hashes/headline) + append the history line."""
     results_dir = Path(cfg["results_dir"])
     meta["status"] = status
     meta["finished_at"] = time.strftime("%Y-%m-%dT%H:%M:%S%z")
     meta["wandb_url"] = wandb_url
+    meta["headline"] = headline(summaries)
     meta["artifacts"] = artifact_hashes(results_dir)
     _write_meta(meta, results_dir)
     append_jsonl(
@@ -163,6 +192,7 @@ def finalize_invocation(meta: dict, cfg: dict, status: str, wandb_url: str | Non
             "stages": meta["stages"],
             "commit": (meta["git"]["commit"] or "none")[:12] + ("+dirty" if meta["git"]["dirty"] else ""),
             "status": status,
+            "headline": meta["headline"],
             "wandb_url": wandb_url,
         },
     )

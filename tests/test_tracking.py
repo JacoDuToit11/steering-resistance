@@ -145,3 +145,22 @@ if __name__ == "__main__":
         fn()
         print(f"PASS {fn.__name__}")
     print(f"\n{len(fns)} tests passed")
+
+
+def test_headline():
+    from steer.tracking import headline
+
+    assert headline(None) == ""
+    assert headline([]) == ""
+    S = [
+        {"model": "M0", "condition": "clean", "alpha": 0.0, "correct": (1.0, 1.0, 1.0)},
+        {"model": "M1", "condition": "clean", "alpha": 0.0, "correct": (0.94, 0.9, 1.0)},
+        {"model": "M0", "condition": "steer_heldout", "alpha": 0.4, "correct": (0.5, 0.4, 0.6)},
+        {"model": "M0", "condition": "steer_heldout", "alpha": 0.8, "correct": (0.03, 0.0, 0.1)},
+        {"model": "M1", "condition": "steer_heldout", "alpha": 0.8, "correct": (0.17, 0.1, 0.3)},
+    ]
+    h = headline(S)
+    assert "clean 100%->94%" in h
+    assert "steer_heldout@0.8 correct 3%->17%" in h  # uses the TOP alpha present
+    # missing M1 clean -> that part is dropped, no crash
+    assert headline([S[0], S[3], S[4]]).startswith("steer_heldout")
