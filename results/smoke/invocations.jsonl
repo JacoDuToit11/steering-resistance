@@ -1,1 +1,0 @@
-{"time": "2026-07-15T15:09:59+0100", "stages": ["vectors", "data", "eval_m0", "train", "eval_m1"], "commit": "da01d02e9106+dirty", "status": "success", "wandb_url": null}
