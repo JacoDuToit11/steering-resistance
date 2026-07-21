@@ -1,0 +1,140 @@
+{
+ "run": "paper_0.5b",
+ "started_at": "2026-07-21T20:39:53+0200",
+ "argv": [
+  "scripts/run.py",
+  "configs/paper_0.5b.yaml"
+ ],
+ "stages": [
+  "vectors",
+  "data",
+  "eval_m0",
+  "train",
+  "eval_m1"
+ ],
+ "config_path": "configs/paper_0.5b.yaml",
+ "config": {
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "device": "auto",
+  "dtype": "auto",
+  "seed": 0,
+  "layer": 8,
+  "train_alphas": [
+   0.4,
+   0.6,
+   0.8
+  ],
+  "eval_alphas": [
+   0.4,
+   0.6,
+   0.8
+  ],
+  "efficacy_alpha": 0.8,
+  "efficacy_min_rate": 0.3,
+  "n_contrast_pairs": 10,
+  "qa_source": "json",
+  "concepts_path": "data/concepts_paper_small.json",
+  "qa_path": "data/qa.json",
+  "relevant_frac": 0.6,
+  "steered_frac": 0.7,
+  "eval_question_frac": 0.2,
+  "repeats_per_question": 6,
+  "alpaca_replay_frac": 0.5,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "lora_targets": [
+   "q_proj",
+   "k_proj",
+   "v_proj",
+   "o_proj",
+   "gate_proj",
+   "up_proj",
+   "down_proj"
+  ],
+  "lr": 0.0001,
+  "epochs": 1,
+  "effective_batch_size": 16,
+  "train_batch_size": 8,
+  "max_seq_len": 256,
+  "max_new_tokens": 64,
+  "eval_batch_size": 24,
+  "bootstrap_resamples": 10000,
+  "capability_tasks": {
+   "mmlu": 5,
+   "gsm8k_cot": 8
+  },
+  "capability_apply_chat_template": true,
+  "capability_limit": "mmlu=15,gsm8k_cot=200",
+  "wandb_project": null,
+  "wandb_entity": null,
+  "hub_repo_id": null,
+  "hub_private": true,
+  "vectors_path": "results/paper_0.5b/vectors.pt",
+  "train_examples_path": "results/paper_0.5b/train_examples.json",
+  "eval_questions_path": "results/paper_0.5b/eval_questions.json",
+  "adapter_dir": "results/paper_0.5b/m1_resist_adapter",
+  "results_dir": "results/paper_0.5b"
+ },
+ "git": {
+  "commit": "aa19168102dc03c191b205a2768e6d5fdada0f8b",
+  "branch": "main",
+  "dirty": false,
+  "remote": "https://github.com/JacoDuToit11/steering-resistance.git"
+ },
+ "env": {
+  "python": "3.12.12",
+  "platform": "macOS-15.7.4-arm64-arm-64bit",
+  "accelerator": "mps",
+  "packages": {
+   "torch": "2.13.0",
+   "transformers": "5.13.1",
+   "peft": "0.19.1",
+   "accelerate": "1.14.0",
+   "datasets": "5.0.0",
+   "numpy": "2.5.1",
+   "wandb": "0.28.0",
+   "huggingface_hub": "1.23.0"
+  }
+ },
+ "data": {
+  "concepts_path": {
+   "path": "data/concepts_paper_small.json",
+   "sha256": "b3d5ace8abf12ff6025768dc46ee23eba84d36f0108e39ac8d60d8534a27d650"
+  },
+  "qa_path": {
+   "path": "data/qa.json",
+   "sha256": "481818587f336c5a737a6662a8cc072557f48ce72fbf2ba72ba727beb018f130"
+  }
+ },
+ "status": "crashed",
+ "wandb_url": null,
+ "finished_at": "2026-07-21T20:52:32+0200",
+ "headline": "",
+ "artifacts": {
+  "eval_m0.jsonl": {
+   "sha256": "c3ffb24870f707a3bd0e39e82126a86c5c05ef6fcf5f98bddc933871272a2db2",
+   "bytes": 1283862
+  },
+  "eval_questions.json": {
+   "sha256": "4f6403ea847ea5d0d5367d4a6fbac6ea2588cc1162f8c4e49cf6120d553ac68c",
+   "bytes": 17903
+  },
+  "summary.csv": {
+   "sha256": "d718be22d17e79315bca9b48dc4d35fa3366e1ce2c8c0699f6311e34416c9a13",
+   "bytes": 883
+  },
+  "summary.md": {
+   "sha256": "e6e2d2c4e7f661d98692b4e55dfd40d014eba54300c4181f7f0a10b1971a44a9",
+   "bytes": 875
+  },
+  "train_examples.json": {
+   "sha256": "2dce62fc9103e7cbadf2e7ede3130a3daae3b559ee246f5815dd4d672b1d3f86",
+   "bytes": 190294
+  },
+  "vectors.pt": {
+   "sha256": "cca8eb43e35a668a8b8c71c7288ae59e3801e55cbf983d61c5ac5fa12a41a5fc",
+   "bytes": 494855
+  }
+ }
+}

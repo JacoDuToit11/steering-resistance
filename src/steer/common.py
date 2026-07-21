@@ -131,6 +131,16 @@ def batch_greedy_generate(model, tok, user_msgs: list[str], max_new_tokens: int 
     return tok.batch_decode(new_tokens, skip_special_tokens=True)
 
 
+def free_memory(device: torch.device):
+    """Release cached-allocator memory. Critical on MPS, whose caching allocator
+    accumulates across steps and can OOM even a small model mid-training; a no-op
+    cost elsewhere."""
+    if device.type == "mps":
+        torch.mps.empty_cache()
+    elif device.type == "cuda":
+        torch.cuda.empty_cache()
+
+
 def append_jsonl(path: str | Path, row: dict):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
