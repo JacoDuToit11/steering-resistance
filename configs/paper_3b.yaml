@@ -33,6 +33,7 @@ relevant_frac: 0.6            # moot here: concept cats disjoint from QA -> all 
 steered_frac: 0.7
 eval_question_frac: 0.2
 repeats_per_question: 6
+alpaca_replay_frac: 0.5        # paper §3.3: 50% Alpaca replay to preserve general capabilities
 
 # Training
 lora_r: 16
