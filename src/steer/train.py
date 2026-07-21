@@ -11,7 +11,7 @@ from pathlib import Path
 import torch
 from peft import LoraConfig, get_peft_model
 
-from steer.common import get_decoder_layers, set_seed
+from steer.common import free_memory, get_decoder_layers, set_seed
 from steer.hooks import steering_batch
 from steer.vectors import load_vectors
 
@@ -97,6 +97,7 @@ def train_m1(model, tok, cfg: dict, tracker=None) -> dict:
                 opt.step()
                 sched.step()
                 opt.zero_grad(set_to_none=True)
+                free_memory(model.device)  # MPS caching allocator accumulates across steps -> OOM
                 recent = sum(losses[-accum:]) / accum
                 print(f"epoch {epoch} step {micro // accum}/{total_steps}: loss {recent:.4f}", flush=True)
                 if tracker is not None:
