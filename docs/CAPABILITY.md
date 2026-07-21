@@ -43,6 +43,9 @@ python scripts/eval_capability.py configs/qwen3b.yaml --chat-template
   `cfg['adapter_dir']`.
 - `--chat-template` applies the instruct chat template (recommended for the
   Qwen-Instruct models).
+- **`mmlu`'s `--limit` is PER-SUBJECT** (MMLU is 57 subjects), so `mmlu=15` ≈ 855
+  items (fast) while `mmlu=200` ≈ the whole benchmark. `gsm8k_cot`'s limit is
+  absolute. `--limit full` runs everything.
 - Resumable: a completed (model, task) is skipped unless `--force`.
 - Writes harness JSON under `results/<run>/capability/<model>/<task>/` and a
   combined `capability_summary.{md,csv}`.
