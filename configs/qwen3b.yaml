@@ -46,7 +46,7 @@ bootstrap_resamples: 10000
 # All optional — these are the defaults, shown for discoverability.
 capability_tasks: {mmlu: 5, gsm8k_cot: 8}
 capability_apply_chat_template: true      # Qwen-Instruct: use the chat template
-capability_limit: "mmlu=200,gsm8k_cot=200"   # fast subset by default; pass --limit full for the whole set
+capability_limit: "mmlu=15,gsm8k_cot=200"    # fast: mmlu limit is PER-SUBJECT (x57 subjects); --limit full for the whole set
 
 # Tracking & backup (PRINCIPLES §9) — null disables; set hub_repo_id (or HF_USER
 # in the Colab launcher) to log this as an experiment on the HF Hub.

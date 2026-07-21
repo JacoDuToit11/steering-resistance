@@ -202,7 +202,9 @@ def main():
     ap.add_argument("config", nargs="?", default="configs/qwen3b.yaml")
     ap.add_argument("--models", default="m0,m1", help="comma list of m0,m1")
     ap.add_argument("--tasks", default=None, help="override cfg capability_tasks (comma list)")
-    ap.add_argument("--limit", default=None, help="per-task cap: int for all, or 'mmlu=15,gsm8k_cot=200'")
+    ap.add_argument("--limit", default=None,
+                    help="per-task cap: int for all, or 'mmlu=15,gsm8k_cot=200'. NOTE mmlu's limit "
+                         "is PER-SUBJECT (x57 subjects); 'full' runs the whole set.")
     ap.add_argument("--chat-template", action="store_true", help="instruct-style: chat template + multiturn fewshot")
     ap.add_argument("--force", action="store_true", help="rerun even if results JSON exists")
     args = ap.parse_args()
