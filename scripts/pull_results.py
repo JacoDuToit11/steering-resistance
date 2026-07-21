@@ -48,6 +48,22 @@ def _pct(row: dict | None, outcome: str) -> str:
     return f"{float(row[outcome + '_pct']) * 100:.0f}%" if row else "—"
 
 
+def print_capability(repo_id: str):
+    """If the run pushed a capability summary, print MMLU/GSM8K M0->M1 + delta."""
+    p = _download(repo_id, "run/capability/capability_summary.csv")
+    if not p:
+        return
+    rows = list(csv.DictReader(open(p)))
+    if not rows:
+        return
+    print(f"\n{'capability':<15}{'':>6}   {'M0 -> M1':>20}   {'delta (pp)':>12}")
+    print("-" * 60)
+    for r in rows:
+        m0 = f"{r['m0']}%" if r.get("m0") else "n/a"
+        m1 = f"{r['m1']}%" if r.get("m1") else "n/a"
+        print(f"{r['benchmark']:<15}{'':>6}   {m0 + ' -> ' + m1:>20}   {r.get('delta_pp', ''):>12}")
+
+
 def pull_one(repo_id: str):
     print(f"\n=== {repo_id} ===")
     meta_p = _download(repo_id, "run/run_meta.json")
@@ -76,6 +92,8 @@ def pull_one(repo_id: str):
         correct = f"{_pct(m0, 'correct'):>6} -> {_pct(m1, 'correct'):<6}"
         steered = f"{_pct(m0, 'steered'):>6} -> {_pct(m1, 'steered'):<6}" if cond in _STEERED_CONDITIONS else ""
         print(f"{cond:<15}{a:>6}   {correct:>20}   {steered:>20}")
+
+    print_capability(repo_id)
 
 
 def main():
