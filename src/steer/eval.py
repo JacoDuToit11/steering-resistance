@@ -12,7 +12,7 @@ from pathlib import Path
 
 import torch
 
-from steer.common import append_jsonl, batch_greedy_generate, get_decoder_layers, read_jsonl
+from steer.common import append_jsonl, batch_greedy_generate, free_memory, get_decoder_layers, read_jsonl
 from steer.data import contains_answer, contains_concept, normalize
 from steer.hooks import steering_batch
 from steer.vectors import load_vectors
@@ -100,6 +100,7 @@ def _run_specs(model, tok, cfg, model_name, bundle, layer_module, vectors, specs
                 **s["extra"],  # last: may override vector_type etc.
             }
             append_jsonl(out_path, row)
+        free_memory(model.device)  # MPS: keep the caching allocator from creeping up over the sweep
         print(f"  eval {model_name}: {min(start + bs, len(specs))}/{len(specs)} rows", flush=True)
 
 

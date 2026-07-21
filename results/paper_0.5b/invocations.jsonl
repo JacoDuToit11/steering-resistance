@@ -1,0 +1,1 @@
+{"time": "2026-07-21T20:39:53+0200", "stages": ["vectors", "data", "eval_m0", "train", "eval_m1"], "commit": "aa19168102dc", "status": "crashed", "headline": "", "wandb_url": null}

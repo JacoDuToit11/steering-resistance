@@ -1,0 +1,423 @@
+{
+ "train": [
+  {
+   "id": "q02",
+   "category": "city",
+   "question": "What is the capital of England?",
+   "answer": "London",
+   "aliases": [],
+   "target": "The capital of England is London."
+  },
+  {
+   "id": "q03",
+   "category": "city",
+   "question": "What is the capital of Japan?",
+   "answer": "Tokyo",
+   "aliases": [],
+   "target": "The capital of Japan is Tokyo."
+  },
+  {
+   "id": "q04",
+   "category": "city",
+   "question": "What is the capital of Italy?",
+   "answer": "Rome",
+   "aliases": [],
+   "target": "The capital of Italy is Rome."
+  },
+  {
+   "id": "q05",
+   "category": "city",
+   "question": "What is the capital of Germany?",
+   "answer": "Berlin",
+   "aliases": [],
+   "target": "The capital of Germany is Berlin."
+  },
+  {
+   "id": "q06",
+   "category": "city",
+   "question": "What is the capital of Spain?",
+   "answer": "Madrid",
+   "aliases": [],
+   "target": "The capital of Spain is Madrid."
+  },
+  {
+   "id": "q09",
+   "category": "city",
+   "question": "What is the capital of South Korea?",
+   "answer": "Seoul",
+   "aliases": [],
+   "target": "The capital of South Korea is Seoul."
+  },
+  {
+   "id": "q10",
+   "category": "city",
+   "question": "What is the capital of China?",
+   "answer": "Beijing",
+   "aliases": [],
+   "target": "The capital of China is Beijing."
+  },
+  {
+   "id": "q11",
+   "category": "city",
+   "question": "In which city is the Eiffel Tower located?",
+   "answer": "Paris",
+   "aliases": [],
+   "target": "The Eiffel Tower is located in Paris, France. It was built between 1887 and 1889 as part of the 1889 World's Fair and stands at an elevation of approximately 30 meters (98 feet) above sea level. The tower is one of"
+  },
+  {
+   "id": "q12",
+   "category": "city",
+   "question": "In which city is Big Ben located?",
+   "answer": "London",
+   "aliases": [],
+   "target": "Big Ben, also known as the \"Tower of London,\" is located in London, England. It was originally built in 1835 and has been the main clock tower for the Palace of Westminster since then. The tower stands at the top of the spire of St Paul's Cathedral, making it one of"
+  },
+  {
+   "id": "q13",
+   "category": "city",
+   "question": "In which city is the Colosseum located?",
+   "answer": "Rome",
+   "aliases": [],
+   "target": "The Colosseum is located in Rome, Italy. It was built between 70-80 AD and is one of the most famous landmarks in the world. The Colosseum is known for its amphitheater, where gladiatorial contests, animal hunts, and other public spectacles were held"
+  },
+  {
+   "id": "q14",
+   "category": "city",
+   "question": "In which city is the Brandenburg Gate located?",
+   "answer": "Berlin",
+   "aliases": [],
+   "target": "The Brandenburg Gate is located in Berlin, Germany. It was designed by architect Gottfried Semper and completed in 1870. The gate's iconic shape and its position on the eastern bank of the River Checktitz have made it one of the most recognizable landmarks in Berlin."
+  },
+  {
+   "id": "q16",
+   "category": "city",
+   "question": "In which city is the Golden Gate Bridge located?",
+   "answer": "San Francisco",
+   "aliases": [],
+   "target": "The Golden Gate Bridge is located in San Francisco, California, USA. It was completed on May 27, 1937, and opened to traffic on June 18, 1937. The bridge spans the Golden Gate strait between San Francisco and Marin County, connecting the Pacific Ocean"
+  },
+  {
+   "id": "q17",
+   "category": "city",
+   "question": "What is the capital of Russia?",
+   "answer": "Moscow",
+   "aliases": [],
+   "target": "The capital of Russia is Moscow."
+  },
+  {
+   "id": "q19",
+   "category": "city",
+   "question": "What is the capital of the United States?",
+   "answer": "Washington",
+   "aliases": [
+    "Washington, D.C.",
+    "Washington D.C.",
+    "Washington DC"
+   ],
+   "target": "The capital of the United States is Washington D.C., also known as the District of Columbia. It serves as the seat of government for the country and is located in the heart of the nation's capital area. Washington D.C. was founded on April 18, 1790, as the capital city"
+  },
+  {
+   "id": "q20",
+   "category": "city",
+   "question": "What is the largest city in Australia?",
+   "answer": "Sydney",
+   "aliases": [],
+   "target": "The largest city in Australia is Sydney, located on the coast of New South Wales. It is the capital and most populous city of the country. Sydney has a population of over 4 million people and is known for its beautiful beaches, vibrant culture, and world-class attractions such as the Sydney Opera House, Bondi Beach"
+  },
+  {
+   "id": "q21",
+   "category": "city",
+   "question": "What is the capital of Portugal?",
+   "answer": "Lisbon",
+   "aliases": [],
+   "target": "The capital of Portugal is Lisbon."
+  },
+  {
+   "id": "q22",
+   "category": "city",
+   "question": "What is the capital of the Netherlands?",
+   "answer": "Amsterdam",
+   "aliases": [],
+   "target": "The capital of the Netherlands is Amsterdam."
+  },
+  {
+   "id": "q23",
+   "category": "city",
+   "question": "What is the capital of Ireland?",
+   "answer": "Dublin",
+   "aliases": [],
+   "target": "The capital of Ireland is Dublin."
+  },
+  {
+   "id": "q24",
+   "category": "city",
+   "question": "What is the capital of Scotland?",
+   "answer": "Edinburgh",
+   "aliases": [],
+   "target": "The capital of Scotland is Edinburgh."
+  },
+  {
+   "id": "q27",
+   "category": "animal",
+   "question": "What is the largest striped big cat?",
+   "answer": "tiger",
+   "aliases": [],
+   "target": "The largest striped big cat is the tiger (Panthera tigris). Tigers are known for their distinctive stripes and are found in various parts of the world, including Asia, Africa, and Europe. They are apex predators and play important roles in maintaining ecological balance. Tigers have been around for millions of years and"
+  },
+  {
+   "id": "q30",
+   "category": "animal",
+   "question": "What is the fastest land animal?",
+   "answer": "cheetah",
+   "aliases": [],
+   "target": "The fastest land animal on Earth is the cheetah. Cheetahs can reach speeds of up to 76 miles per hour (122 kilometers per hour) in short bursts, making them one of the fastest land animals known to science.\n\nCheetahs have evolved to be highly efficient runners and"
+  },
+  {
+   "id": "q31",
+   "category": "animal",
+   "question": "What is the largest animal that has ever lived?",
+   "answer": "blue whale",
+   "aliases": [
+    "whale"
+   ],
+   "target": "The largest animal that has ever lived is the blue whale, which can grow up to 100 feet in length and weigh over 250 tons. Blue whales are found in the world's oceans, including the Pacific, Atlantic, and Indian Oceans. They are known for their long necks and be"
+  },
+  {
+   "id": "q36",
+   "category": "animal",
+   "question": "Which animal is known as man's best friend?",
+   "answer": "dog",
+   "aliases": [],
+   "target": "The animal that is often referred to as \"man's best friend\" is the dog. Dogs have been domesticated for thousands of years and have become an integral part of human society, serving various roles such as companionship, protection, and even as pets. They are highly intelligent, loyal, and affectionate animals that"
+  },
+  {
+   "id": "q37",
+   "category": "animal",
+   "question": "Which bird is famous for mimicking human speech?",
+   "answer": "parrot",
+   "aliases": [],
+   "target": "The bird that is most famously known for mimicking human speech is the parrot. Parrots have been trained to mimic various sounds and phrases, including those used in everyday conversation. They can learn to mimic words, phrases, or even entire sentences, which makes them very useful as pets or as teaching tools.\n\nSome well"
+  },
+  {
+   "id": "q38",
+   "category": "animal",
+   "question": "Which animal is called the ship of the desert?",
+   "answer": "camel",
+   "aliases": [],
+   "target": "The animal that is commonly referred to as the \"ship of the desert\" is the camel.\n\nCamels are known for their ability to survive in arid and semi-arid environments, where water is scarce. They have adapted to this harsh environment through various adaptations such as thick fur, large ears, and long legs."
+  },
+  {
+   "id": "q39",
+   "category": "animal",
+   "question": "Which farm animal produces wool?",
+   "answer": "sheep",
+   "aliases": [],
+   "target": "The sheep is the primary livestock species that produce wool. Sheep are known for their long, fine hair and wool, which is used in various textile products such as clothing, carpets, and rugs. The production of wool involves several steps:\n\n1. **Sheep Selection**: Selecting high-quality ewes (female sheep)"
+  },
+  {
+   "id": "q43",
+   "category": "animal",
+   "question": "Which insect produces honey?",
+   "answer": "bee",
+   "aliases": [
+    "honeybee",
+    "honey bee"
+   ],
+   "target": "The insect that produces honey is the honeybee (Apis mellifera). Honeybees are known for their remarkable ability to produce honey through a process called \"honey production.\" This process involves several key steps:\n\n1. **Nectar Collection**: The bees collect nectar from flowers, which contains sugars and other nutrients"
+  },
+  {
+   "id": "q44",
+   "category": "animal",
+   "question": "Which nocturnal bird is known for hooting?",
+   "answer": "owl",
+   "aliases": [],
+   "target": "The nocturnal bird that is known for hooting is the owl. Owls are renowned for their distinctive hooting calls, which can be heard from great distances and are often used to communicate with other owls or to attract mates. They are particularly famous in folklore and literature for their mysterious nature and haunting presence. Ow"
+  },
+  {
+   "id": "q46",
+   "category": "animal",
+   "question": "Which sea creature has eight arms?",
+   "answer": "octopus",
+   "aliases": [],
+   "target": "The sea creature that has eight arms is the octopus. Octopuses belong to the class Cephalopoda and are known for their unique ability to change color and shape through movement. They have eight arms on each side of their body, which they use to capture prey or defend themselves against predators. While oct"
+  },
+  {
+   "id": "q47",
+   "category": "animal",
+   "question": "Which insect spins silk used for fabric?",
+   "answer": "silkworm",
+   "aliases": [
+    "silk worm",
+    "silk moth"
+   ],
+   "target": "The insect that spins silk to create the material used in clothing and textiles is the silkworm ( Bombyx mori ). Silkworms feed on mulberry leaves and produce cocoons made of silk threads. These cocoons are then spun into thread-like strands that can be woven into fabrics.\n\nSilk is"
+  },
+  {
+   "id": "q49",
+   "category": "generic",
+   "question": "What color is the sky on a clear day?",
+   "answer": "blue",
+   "aliases": [],
+   "target": "On a clear day, the sky appears blue due to the scattering of sunlight by tiny water droplets in the atmosphere. This phenomenon is known as Rayleigh scattering. The exact shade of blue depends on the angle and intensity of the sunlight hitting the Earth's surface.\n\nHowever, it's important to note that the sky can"
+  },
+  {
+   "id": "q51",
+   "category": "generic",
+   "question": "How many days are in a week?",
+   "answer": "7",
+   "aliases": [
+    "seven"
+   ],
+   "target": "There are 7 days in a week."
+  },
+  {
+   "id": "q53",
+   "category": "generic",
+   "question": "What is the largest ocean on Earth?",
+   "answer": "Pacific",
+   "aliases": [
+    "Pacific Ocean"
+   ],
+   "target": "The largest ocean on Earth is the Pacific Ocean. It covers an area of approximately 14 million square kilometers and is located between the Tropic of Cancer in the north and the Arctic Circle in the south. The Pacific Ocean is also known as the \"Ocean of the Seven Seas\" due to its vastness and diversity"
+  },
+  {
+   "id": "q54",
+   "category": "generic",
+   "question": "What is the common name for H2O?",
+   "answer": "water",
+   "aliases": [],
+   "target": "The common name for water (H₂O) is simply \"water.\" It's a fundamental and essential substance that forms the basis of all life on Earth. Water exists in various forms, including liquid, solid, and gas states, but its primary form is water vapor or steam. The term \"water\" encompasses both"
+  },
+  {
+   "id": "q55",
+   "category": "generic",
+   "question": "On which continent is the Sahara Desert?",
+   "answer": "Africa",
+   "aliases": [],
+   "target": "The Sahara Desert is located in Africa. It stretches across most of North Africa and parts of West Africa, including Algeria, Libya, Morocco, Tunisia, Egypt, Sudan, Chad, Niger, Mali, Mauritania, and Western Sahara. The Sahara is one of the world's largest deserts, covering an area of approximately"
+  },
+  {
+   "id": "q56",
+   "category": "generic",
+   "question": "Which river flows through Egypt?",
+   "answer": "Nile",
+   "aliases": [
+    "the Nile"
+   ],
+   "target": "The Nile River is the longest river in the world and flows through Egypt. It originates in the highlands of Ethiopia and flows for about 4, 000 miles (6, 032 kilometers) before emptying into the Mediterranean Sea at the mouth of the Suez Canal. The Nile has played"
+  },
+  {
+   "id": "q57",
+   "category": "generic",
+   "question": "Who was the first president of the United States?",
+   "answer": "George Washington",
+   "aliases": [
+    "Washington"
+   ],
+   "target": "The first president of the United States was George Washington. He served from 1789 to 1797 and is widely regarded as one of the most important figures in American history. Washington's presidency marked the beginning of the nation's development into a powerful and influential country."
+  },
+  {
+   "id": "q58",
+   "category": "generic",
+   "question": "Which metal is liquid at room temperature?",
+   "answer": "mercury",
+   "aliases": [],
+   "target": "At room temperature (approximately 20°C or 68°F), the only metal that is typically considered to be in a liquid state is mercury. Mercury has a melting point of -39°C (-41°F) and a boiling point of 357. 3°C (678."
+  },
+  {
+   "id": "q60",
+   "category": "generic",
+   "question": "What language is primarily spoken in Brazil?",
+   "answer": "Portuguese",
+   "aliases": [],
+   "target": "Brazilian Portuguese is the predominant language spoken in Brazil. It is also widely used in other parts of South America and some neighboring countries. The official language of Brazil is Portuguese, but Spanish is also widely spoken in some areas due to historical influences from Spain."
+  }
+ ],
+ "eval": [
+  {
+   "id": "q01",
+   "category": "city",
+   "question": "What is the capital of France?",
+   "answer": "Paris",
+   "aliases": [],
+   "target": "The capital of France is Paris."
+  },
+  {
+   "id": "q07",
+   "category": "city",
+   "question": "What is the capital of Austria?",
+   "answer": "Vienna",
+   "aliases": [],
+   "target": "The capital of Austria is Vienna."
+  },
+  {
+   "id": "q08",
+   "category": "city",
+   "question": "What is the capital of Greece?",
+   "answer": "Athens",
+   "aliases": [],
+   "target": "The capital of Greece is Athens."
+  },
+  {
+   "id": "q15",
+   "category": "city",
+   "question": "In which city is the Statue of Liberty located?",
+   "answer": "New York",
+   "aliases": [
+    "New York City",
+    "NYC"
+   ],
+   "target": "The Statue of Liberty is located in New York City, United States. It was built as a gift from France to the United States in 1886 and is one of the most recognizable symbols of the United States. The statue stands at the entrance of the Liberty Island in New York Harbor, approximately 30"
+  },
+  {
+   "id": "q18",
+   "category": "city",
+   "question": "What is the capital of Egypt?",
+   "answer": "Cairo",
+   "aliases": [],
+   "target": "The capital of Egypt is Cairo."
+  },
+  {
+   "id": "q26",
+   "category": "animal",
+   "question": "Which flightless bird lives in Antarctica?",
+   "answer": "penguin",
+   "aliases": [],
+   "target": "The flightless bird that lives in Antarctica is the penguin. Penguins are unique among birds because they have evolved to live on land and are unable to fly. They are found only in the Southern Hemisphere, primarily in the Antarctic region of the continent. Penguins are known for their distinctive white feathers and long necks,"
+  },
+  {
+   "id": "q34",
+   "category": "animal",
+   "question": "Which Australian animal hops and carries its young in a pouch?",
+   "answer": "kangaroo",
+   "aliases": [],
+   "target": "The Australian animal that hops and carries its young in a pouch is the kangaroo. Specifically, the kangaroo is known for carrying its offspring in a pouch on its back or hind legs. This behavior is an adaptation to their unique lifestyle as they live primarily on vegetation and require quick movement to find food and avoid predators."
+  },
+  {
+   "id": "q48",
+   "category": "animal",
+   "question": "Which bird fans out a colorful tail to attract mates?",
+   "answer": "peacock",
+   "aliases": [],
+   "target": "The bird that fans out its colorful tail to attract mates is the male peacock. Peacocks are known for their elaborate tail displays, which serve multiple purposes in their mating rituals.\n\n1. **Communication**: The peacock's tail serves as a visual communication tool. By raising and lowering its tail feathers, it can"
+  },
+  {
+   "id": "q50",
+   "category": "generic",
+   "question": "What is two plus two?",
+   "answer": "4",
+   "aliases": [
+    "four"
+   ],
+   "target": "Two plus two equals four."
+  },
+  {
+   "id": "q52",
+   "category": "generic",
+   "question": "Which planet is known as the Red Planet?",
+   "answer": "Mars",
+   "aliases": [],
+   "target": "The planet known as the \"Red Planet\" is Mars. It was named after the Roman god of war and the son of Mars, the Roman god of war. The red color of Mars comes from its atmosphere, which contains carbon dioxide and other gases that absorb sunlight and heat, causing the surface to appear reddish in"
+  }
+ ]
+}
