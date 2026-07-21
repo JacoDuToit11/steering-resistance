@@ -75,9 +75,11 @@ def stage_data(model, tok, cfg: dict):
     examples = build_train_examples(train_q, train_concepts, cfg, rng)
     n_steered = sum(e["steered"] for e in examples)
     n_rel = sum(1 for e in examples if e["pairing"] == "relevant")
+    n_alpaca = sum(1 for e in examples if e["category"] == "alpaca")
+    n_clean = len(examples) - n_steered - n_alpaca
     print(
         f"{len(examples)} training examples: {n_steered} steered ({n_rel} relevant / "
-        f"{n_steered - n_rel} irrelevant), {len(examples) - n_steered} clean"
+        f"{n_steered - n_rel} irrelevant), {n_clean} clean, {n_alpaca} alpaca-replay"
     )
 
     Path(cfg["train_examples_path"]).parent.mkdir(parents=True, exist_ok=True)

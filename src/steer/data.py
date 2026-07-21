@@ -119,6 +119,39 @@ def pick_concept(q: dict, concepts: list[dict], relevant_frac: float, rng: rando
     return rng.choice(irrelevant)["name"], "irrelevant"
 
 
+def load_alpaca(n: int, rng: random.Random, max_chars: int = 500) -> list[dict]:
+    """Alpaca instruction-following examples as clean (unsteered) replay rows —
+    the paper's "50% Alpaca replay to preserve general capabilities" (§3.3).
+
+    Rows are in the training schema, steered=False, so they flow through the loop
+    as ordinary (no-injection) forward passes. Filtered to instruction+output that
+    fit comfortably under max_seq_len (avoids teaching truncated text)."""
+    from datasets import load_dataset
+
+    ds = load_dataset("tatsu-lab/alpaca", split="train")
+    idxs = list(range(len(ds)))
+    rng.shuffle(idxs)
+    out: list[dict] = []
+    for i in idxs:
+        r = ds[i]
+        instr = r["instruction"].strip()
+        if r.get("input", "").strip():
+            instr = f"{instr}\n\n{r['input'].strip()}"
+        target = r["output"].strip()
+        if not target or len(instr) + len(target) > max_chars:
+            continue
+        out.append({"question_id": f"alpaca{len(out)}", "question": instr, "target": target,
+                    "category": "alpaca", "steered": False, "concept": None, "pairing": None, "alpha": 0.0})
+        if len(out) >= n:
+            break
+    return out
+
+
+def n_alpaca_for(frac: float, n_examples: int) -> int:
+    """Count of Alpaca rows so they are `frac` of the FINAL mix (0.5 => equal parts)."""
+    return round(frac / (1 - frac) * n_examples) if frac and 0 < frac < 1 else 0
+
+
 def build_train_examples(
     train_questions: list[dict],
     train_concepts: list[dict],
@@ -126,7 +159,8 @@ def build_train_examples(
     rng: random.Random,
 ) -> list[dict]:
     """repeats_per_question examples per training question, each independently
-    steered (steered_frac, random concept+alpha) or clean."""
+    steered (steered_frac, random concept+alpha) or clean; then optional Alpaca
+    replay (cfg['alpaca_replay_frac']) mixed in for capability retention."""
     examples = []
     for q in train_questions:
         for _ in range(cfg["repeats_per_question"]):
@@ -142,5 +176,12 @@ def build_train_examples(
             else:
                 ex.update(steered=False, concept=None, pairing=None, alpha=0.0)
             examples.append(ex)
+
+    # Alpaca replay (paper §3.3): clean instruction-following data to preserve
+    # general capabilities. alpaca_replay_frac = share of the FINAL mix.
+    n_alpaca = n_alpaca_for(cfg.get("alpaca_replay_frac", 0.0), len(examples))
+    if n_alpaca:
+        examples += load_alpaca(n_alpaca, rng)
+
     rng.shuffle(examples)
     return examples
