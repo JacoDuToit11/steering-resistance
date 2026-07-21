@@ -1,0 +1,8705 @@
+{
+ "_notes": "[full] B.4/B.7 analogue. TRAINED English categories (members split ~80/20 train/near-OOD) + FAR-OOD categories held out entirely (incl. a non-English suite). Authored attack DIRECTIONS (legit; task/questions stay real). CAA diff-of-means, concept vs fixed NEUTRAL baseline (paper B.1), concept as FINAL token. Regenerate: python scripts/gen_paper_concepts.py full",
+ "concepts": [
+  {
+   "name": "apple",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "hammer",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "umbrella",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "chair",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "bottle",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "ladder",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "mirror",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "pencil",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "blanket",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "basket",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "candle",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "clock",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "spoon",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "wallet",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "camera",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "kettle",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "brush",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "anchor",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "bucket",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "drum",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "envelope",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "feather",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "glove",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "helmet",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "jar",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "kite",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "lantern",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "magnet",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "needle",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "pillow",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "rope",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "scissors",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "telescope",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "trophy",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "vase",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "whistle",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "wrench",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "zipper",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "saddle",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "compass",
+   "category": "Concrete Nouns",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "jumping",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "sleeping",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "dancing",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "running",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "swimming",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "writing",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "cooking",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "singing",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "climbing",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "laughing",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "crying",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "reading",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "painting",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "building",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "digging",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "throwing",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "catching",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "whispering",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "shouting",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "melting",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "freezing",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "floating",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "sinking",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "bending",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "twisting",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "folding",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "pouring",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "stacking",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "sliding",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "spinning",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "crawling",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "marching",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "sneezing",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "yawning",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "knitting",
+   "category": "Verbs",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "bright",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "heavy",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "fragile",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "ancient",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "slippery",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "enormous",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "tiny",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "hollow",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "smooth",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "jagged",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "silent",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "vibrant",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "brittle",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "gigantic",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "delicate",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "luminous",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "murky",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "radiant",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "sturdy",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "feeble",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "glossy",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "coarse",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "transparent",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "opaque",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "elastic",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "rigid",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "humid",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "arid",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "frosty",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "molten",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "velvety",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "prickly",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "serene",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "turbulent",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "gleaming",
+   "category": "Adjectives",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "truth",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "courage",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "knowledge",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "freedom",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "justice",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "wisdom",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "chaos",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "harmony",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "betrayal",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "loyalty",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "ambition",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "patience",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "destiny",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "illusion",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "paradox",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "infinity",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "nostalgia",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "serenity",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "tyranny",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "virtue",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "folly",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "valor",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "mercy",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "greed",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "honor",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "doubt",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "faith",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "logic",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "memory",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "legacy",
+   "category": "Abstract Concepts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "happiness",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "anxiety",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "curiosity",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "anger",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "sadness",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "joy",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "fear",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "disgust",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "envy",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "pride",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "shame",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "guilt",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "gratitude",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "boredom",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "excitement",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "loneliness",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "contentment",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "frustration",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "hope",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "despair",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "jealousy",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "awe",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "relief",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "embarrassment",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "affection",
+   "category": "Emotions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "elephant",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "penguin",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "dolphin",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "tiger",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "kangaroo",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "giraffe",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "octopus",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "falcon",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "rhinoceros",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "cheetah",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "walrus",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "chameleon",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "hedgehog",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "otter",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "flamingo",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "jaguar",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "koala",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "lemur",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "meerkat",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "narwhal",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "panther",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "salamander",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "toucan",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "wombat",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "armadillo",
+   "category": "Animals",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "mountain",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "river",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "forest",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "desert",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "volcano",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "glacier",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "canyon",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "waterfall",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "meadow",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "swamp",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "reef",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "tundra",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "prairie",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "cavern",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "geyser",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "dune",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "marsh",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "valley",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "plateau",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "lagoon",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "cliff",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "delta",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "savanna",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "fjord",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "oasis",
+   "category": "Nature",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "bread",
+   "category": "Food",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "cheese",
+   "category": "Food",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "mango",
+   "category": "Food",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "chocolate",
+   "category": "Food",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "noodle",
+   "category": "Food",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "pancake",
+   "category": "Food",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "avocado",
+   "category": "Food",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "pretzel",
+   "category": "Food",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "dumpling",
+   "category": "Food",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "sushi",
+   "category": "Food",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "curry",
+   "category": "Food",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "waffle",
+   "category": "Food",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "biscuit",
+   "category": "Food",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "lentil",
+   "category": "Food",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "walnut",
+   "category": "Food",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "cinnamon",
+   "category": "Food",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "tofu",
+   "category": "Food",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "croissant",
+   "category": "Food",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "pickle",
+   "category": "Food",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "custard",
+   "category": "Food",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "above",
+   "category": "Spatial Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "below",
+   "category": "Spatial Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "beneath",
+   "category": "Spatial Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "beside",
+   "category": "Spatial Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "between",
+   "category": "Spatial Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "inside",
+   "category": "Spatial Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "outside",
+   "category": "Spatial Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "behind",
+   "category": "Spatial Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "forward",
+   "category": "Spatial Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "backward",
+   "category": "Spatial Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "diagonal",
+   "category": "Spatial Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "adjacent",
+   "category": "Spatial Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "distant",
+   "category": "Spatial Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "central",
+   "category": "Spatial Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "peripheral",
+   "category": "Spatial Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "yesterday",
+   "category": "Temporal Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "tomorrow",
+   "category": "Temporal Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "midnight",
+   "category": "Temporal Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "dawn",
+   "category": "Temporal Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "dusk",
+   "category": "Temporal Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "eternity",
+   "category": "Temporal Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "decade",
+   "category": "Temporal Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "instant",
+   "category": "Temporal Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "autumn",
+   "category": "Temporal Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "twilight",
+   "category": "Temporal Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "noon",
+   "category": "Temporal Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "epoch",
+   "category": "Temporal Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "interval",
+   "category": "Temporal Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "moment",
+   "category": "Temporal Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "century",
+   "category": "Temporal Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "dozen",
+   "category": "Quantities",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "trillion",
+   "category": "Quantities",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "fraction",
+   "category": "Quantities",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "majority",
+   "category": "Quantities",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "handful",
+   "category": "Quantities",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "myriad",
+   "category": "Quantities",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "couple",
+   "category": "Quantities",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "surplus",
+   "category": "Quantities",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "deficit",
+   "category": "Quantities",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "multitude",
+   "category": "Quantities",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "abundant",
+   "category": "Quantities",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "scarce",
+   "category": "Quantities",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "single",
+   "category": "Quantities",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "quadruple",
+   "category": "Quantities",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "zero",
+   "category": "Quantities",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "algorithm",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "entropy",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "capacitor",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "isotope",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "enzyme",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "quantum",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "bandwidth",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "polymer",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "catalyst",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "transistor",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "photon",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "chromosome",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "latency",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "torque",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "plasma",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "semiconductor",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "molecule",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "amplitude",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "protocol",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "neuron",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "voltage",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "momentum",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "frequency",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "encryption",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "membrane",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "resistor",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "spectrum",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "valence",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "matrix",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "gradient",
+   "category": "Technical Terms",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "surgeon",
+   "category": "Professions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "architect",
+   "category": "Professions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "plumber",
+   "category": "Professions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "journalist",
+   "category": "Professions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "electrician",
+   "category": "Professions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "astronomer",
+   "category": "Professions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "blacksmith",
+   "category": "Professions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "carpenter",
+   "category": "Professions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "librarian",
+   "category": "Professions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "pilot",
+   "category": "Professions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "chef",
+   "category": "Professions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "accountant",
+   "category": "Professions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "geologist",
+   "category": "Professions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "sculptor",
+   "category": "Professions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "welder",
+   "category": "Professions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "pharmacist",
+   "category": "Professions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "translator",
+   "category": "Professions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "veterinarian",
+   "category": "Professions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "cartographer",
+   "category": "Professions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "locksmith",
+   "category": "Professions",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "wedding",
+   "category": "Events",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "festival",
+   "category": "Events",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "election",
+   "category": "Events",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "earthquake",
+   "category": "Events",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "marathon",
+   "category": "Events",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "coronation",
+   "category": "Events",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "eclipse",
+   "category": "Events",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "parade",
+   "category": "Events",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "tournament",
+   "category": "Events",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "graduation",
+   "category": "Events",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "rebellion",
+   "category": "Events",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "harvest",
+   "category": "Events",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "migration",
+   "category": "Events",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "avalanche",
+   "category": "Events",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "ceremony",
+   "category": "Events",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "auction",
+   "category": "Events",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "expedition",
+   "category": "Events",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "protest",
+   "category": "Events",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "reunion",
+   "category": "Events",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "blizzard",
+   "category": "Events",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "elbow",
+   "category": "Body Parts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "kneecap",
+   "category": "Body Parts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "shoulder",
+   "category": "Body Parts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "eyelash",
+   "category": "Body Parts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "knuckle",
+   "category": "Body Parts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "ankle",
+   "category": "Body Parts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "spine",
+   "category": "Body Parts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "wrist",
+   "category": "Body Parts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "tendon",
+   "category": "Body Parts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "jaw",
+   "category": "Body Parts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "collarbone",
+   "category": "Body Parts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "thigh",
+   "category": "Body Parts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "forehead",
+   "category": "Body Parts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "eyebrow",
+   "category": "Body Parts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "thumb",
+   "category": "Body Parts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "heel",
+   "category": "Body Parts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "ribcage",
+   "category": "Body Parts",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "marble",
+   "category": "Materials",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "copper",
+   "category": "Materials",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "velvet",
+   "category": "Materials",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "granite",
+   "category": "Materials",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "ceramic",
+   "category": "Materials",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "bronze",
+   "category": "Materials",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "leather",
+   "category": "Materials",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "silk",
+   "category": "Materials",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "concrete",
+   "category": "Materials",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "rubber",
+   "category": "Materials",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "porcelain",
+   "category": "Materials",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "aluminum",
+   "category": "Materials",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "mahogany",
+   "category": "Materials",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "train"
+  },
+  {
+   "name": "wool",
+   "category": "Materials",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "titanium",
+   "category": "Materials",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "obsidian",
+   "category": "Materials",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "near"
+  },
+  {
+   "name": "harbor",
+   "category": "Places",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "cathedral",
+   "category": "Places",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "observatory",
+   "category": "Places",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "monastery",
+   "category": "Places",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "lighthouse",
+   "category": "Places",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "vineyard",
+   "category": "Places",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "plaza",
+   "category": "Places",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "arcade",
+   "category": "Places",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "quarry",
+   "category": "Places",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "fortress",
+   "category": "Places",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "bazaar",
+   "category": "Places",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "aqueduct",
+   "category": "Places",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "colosseum",
+   "category": "Places",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "pier",
+   "category": "Places",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "citadel",
+   "category": "Places",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "crimson",
+   "category": "Colors",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "turquoise",
+   "category": "Colors",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "magenta",
+   "category": "Colors",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "indigo",
+   "category": "Colors",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "amber",
+   "category": "Colors",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "scarlet",
+   "category": "Colors",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "olive",
+   "category": "Colors",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "maroon",
+   "category": "Colors",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "teal",
+   "category": "Colors",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "lavender",
+   "category": "Colors",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "beige",
+   "category": "Colors",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "chartreuse",
+   "category": "Colors",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "Katze",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "Haus",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "Wasser",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "Buch",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "Baum",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "chien",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "maison",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "soleil",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "fleur",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "pain",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "gato",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "casa",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "luna",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "libro",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "mesa",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "cane",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "sole",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "mare",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "latte",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "ponte",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "livro",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "praia",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "chuva",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "cidade",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "estrela",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "huis",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "boom",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "brood",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "kaas",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "wolk",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "hund",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "sol",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "snö",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "bok",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "regn",
+   "category": "European Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "山",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "川",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "空",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "猫",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "水",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "火",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "家",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "月",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "树",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "书",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "雨",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "风",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "산",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "강",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "하늘",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "물",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "불",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "집",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "पानी",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "घर",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "सूरज",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "किताब",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "पेड़",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "नदी",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "น้ำ",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "บ้าน",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "ต้นไม้",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "ภูเขา",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "หนังสือ",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "ดวงอาทิตย์",
+   "category": "Asian Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "بيت",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "ماء",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "شمس",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "كتاب",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "شجرة",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "دом",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "вода",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "солнце",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "книга",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "дерево",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "nyumba",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "maji",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "jua",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "kitabu",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "mti",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "ev",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "su",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "güneş",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "kitap",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "ağaç",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "σπίτι",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "νερό",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "ήλιος",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "βιβλίο",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  },
+  {
+   "name": "δέντρο",
+   "category": "Other Languages",
+   "contrasts": [
+    "something",
+    "stuff",
+    "things",
+    "matters",
+    "topics",
+    "subjects",
+    "ideas",
+    "everything",
+    "details",
+    "items"
+   ],
+   "split": "heldout",
+   "ood": "far"
+  }
+ ],
+ "templates": [
+  "My favorite thing to talk about is {c}",
+  "I am thinking about {c}",
+  "The story is all about {c}",
+  "Today we will discuss {c}",
+  "She could not stop mentioning {c}"
+ ]
+}
