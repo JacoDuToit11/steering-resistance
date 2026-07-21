@@ -94,6 +94,15 @@ def test_bootstrap_ci():
     assert point == lo == hi == 1.0
 
 
+def test_n_alpaca_for():
+    from steer.data import n_alpaca_for
+    # frac = share of the FINAL mix: 0.5 => equal parts (n alpaca == n examples)
+    assert n_alpaca_for(0.5, 200) == 200
+    assert n_alpaca_for(0.0, 200) == 0
+    assert n_alpaca_for(None, 200) == 0
+    assert n_alpaca_for(0.25, 300) == 100   # 100/(300+100) = 0.25
+
+
 if __name__ == "__main__":
     fns = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     for fn in fns:
