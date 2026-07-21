@@ -154,34 +154,46 @@ def read_metric(out_dir: Path, task: str):
 
 
 def write_summary(cfg, tasks, models, cap_dir):
-    rows = {t: {m: read_metric(cap_dir / m / t, t) for m in models} for t in tasks}
+    import csv as csvmod
+
     pair = set(models) == {"m0", "m1"}
+    # collect once: task -> (metric_key, {model: pct-or-None}, delta_pp-or-None)
+    summary = {}
+    for task in tasks:
+        got = {m: read_metric(cap_dir / m / task, task) for m in models}
+        vals = {m: (got[m][0] * 100 if got[m][0] is not None else None) for m in models}
+        key = next((got[m][1] for m in models if got[m][1]), "-")
+        delta = (vals["m1"] - vals["m0"]) if pair and vals.get("m0") is not None and vals.get("m1") is not None else None
+        summary[task] = (key, vals, delta)
+
     header = f"{'benchmark':<14}{'metric':<26}" + "".join(f"{m.upper():>9}" for m in models) + (f"{'delta':>9}" if pair else "")
     print("\n" + "=" * len(header) + "\n" + header + "\n" + "-" * len(header))
+    for task, (key, vals, delta) in summary.items():
+        cells = "".join(f"{vals[m]:>8.1f}%" if vals[m] is not None else f"{'n/a':>9}" for m in models)
+        line = f"{task:<14}{key:<26}{cells}" + (f"{delta:>+8.1f}" if delta is not None else "")
+        print(line)
+
     md = ["| benchmark | metric | " + " | ".join(m.upper() for m in models) + (" | delta (pp) |" if pair else " |"),
           "|" + "---|" * (len(models) + 2 + (1 if pair else 0))]
-    csv = ["benchmark,metric," + ",".join(models) + (",delta_pp" if pair else "")]
-    for task in tasks:
-        vals = {m: rows[task][m][0] for m in models}
-        key = next((rows[task][m][1] for m in models if rows[task][m][1]), "-")
-        cells = "".join(f"{(vals[m] * 100):>8.1f}%" if vals[m] is not None else f"{'n/a':>9}" for m in models)
-        line, mdc, csvc = f"{task:<14}{key:<26}{cells}", [], []
-        for m in models:
-            mdc.append(f"{vals[m] * 100:.1f}%" if vals[m] is not None else "n/a")
-            csvc.append(f"{vals[m] * 100:.2f}" if vals[m] is not None else "")
-        if pair and vals.get("m0") is not None and vals.get("m1") is not None:
-            d = (vals["m1"] - vals["m0"]) * 100
-            line += f"{d:>+8.1f}"
-            mdc.append(f"{d:+.1f}")
-            csvc.append(f"{d:+.2f}")
-        print(line)
-        md.append("| " + task + " | " + key + " | " + " | ".join(mdc) + " |")
-        csv.append(task + "," + key + "," + ",".join(csvc))
+    for task, (key, vals, delta) in summary.items():
+        cells = [f"{vals[m]:.1f}%" if vals[m] is not None else "n/a" for m in models]
+        if pair:
+            cells.append(f"{delta:+.1f}" if delta is not None else "n/a")
+        md.append("| " + task + " | " + key + " | " + " | ".join(cells) + " |")
     (cap_dir / "capability_summary.md").write_text(
         "# Capability retention: M0 (base) vs M1 (resist SFT)\n\n"
         "arXiv:2511.21399 App. E.4 methodology — lm-eval-harness, MMLU 5-shot MC, "
         "GSM8K 8-shot CoT, greedy, accuracy on the test split.\n\n" + "\n".join(md) + "\n")
-    (cap_dir / "capability_summary.csv").write_text("\n".join(csv) + "\n")
+
+    # proper CSV (metric keys like "acc,none" contain commas -> must be quoted)
+    with open(cap_dir / "capability_summary.csv", "w", newline="") as f:
+        w = csvmod.writer(f)
+        w.writerow(["benchmark", "metric", *models] + (["delta_pp"] if pair else []))
+        for task, (key, vals, delta) in summary.items():
+            row = [task, key] + [f"{vals[m]:.2f}" if vals[m] is not None else "" for m in models]
+            if pair:
+                row.append(f"{delta:+.2f}" if delta is not None else "")
+            w.writerow(row)
     print(f"\nsaved -> {cap_dir / 'capability_summary.md'} , {cap_dir / 'capability_summary.csv'}")
 
 
