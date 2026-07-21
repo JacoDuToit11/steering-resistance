@@ -17,6 +17,7 @@ dependencies = [
 [project.optional-dependencies]
 dev = ["pytest>=8.0", "ruff>=0.9"]
 track = ["wandb>=0.19"]
+capability = ["lm-eval>=0.4.5"]   # MMLU/GSM8K via lm-evaluation-harness (see docs/CAPABILITY.md)
 
 [build-system]
 requires = ["hatchling"]

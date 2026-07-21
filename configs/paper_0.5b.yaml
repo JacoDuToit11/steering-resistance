@@ -1,0 +1,69 @@
+# Paper-recipe run on Qwen2.5-0.5B — the group's Steering Awareness-faithful
+# method at a laptop/free-T4 scale. Differs from smoke_0.5b in the DATA:
+#   * attacks  = data/concepts_paper_small.json — authored concept bank, 6 trained
+#     categories + near-OOD members + 2 far-OOD categories (incl. non-English),
+#     with NEUTRAL-BASELINE contrast (concept vs "something/stuff/…", SA §B.1).
+#   * task     = data/qa.json — easy factual questions the 0.5B actually knows.
+# Concept categories are disjoint from question topics, so every injection is
+# off-topic by construction (matches the paper's attack design). The efficacy
+# gate drops attack directions that don't hijack the base model (expect several
+# non-English far-OOD concepts to drop at 0.5B — that's the gate working).
+#
+# Scale up later: swap concepts_paper_small -> concepts_paper (full 500) and
+# qa.json -> qa_open.json (100 open factual Qs) on a 3B/7B run.
+
+model_id: Qwen/Qwen2.5-0.5B-Instruct
+device: auto
+dtype: auto
+seed: 0
+
+# Steering (0.5B-calibrated; alpha in units of mean residual norm)
+layer: 8
+train_alphas: [0.4, 0.6, 0.8]
+eval_alphas: [0.4, 0.6, 0.8]
+efficacy_alpha: 0.8
+efficacy_min_rate: 0.3
+n_contrast_pairs: 10
+
+# Data — paper attack bank + easy factual task
+qa_source: json
+concepts_path: data/concepts_paper_small.json
+qa_path: data/qa.json
+relevant_frac: 0.6            # moot here: concept cats disjoint from QA -> all off-topic
+steered_frac: 0.7
+eval_question_frac: 0.2
+repeats_per_question: 6
+
+# Training
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+lora_targets: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+lr: 1.0e-4
+epochs: 1
+effective_batch_size: 16
+train_batch_size: 8
+max_seq_len: 256
+
+# Eval
+max_new_tokens: 64
+eval_batch_size: 24
+bootstrap_resamples: 10000
+
+# Capability retention (scripts/eval_capability.py; needs the [capability] extra)
+capability_tasks: {mmlu: 5, gsm8k_cot: 8}
+capability_apply_chat_template: true
+capability_limit: "mmlu=200,gsm8k_cot=200"   # fast subset by default; pass --limit full for the whole set
+
+# Tracking & backup — null disables; set HF_USER in the Colab launcher to log it
+wandb_project: null
+wandb_entity: null
+hub_repo_id: null
+hub_private: true
+
+# Paths — one results/<run>/ per experiment, never shared
+vectors_path: results/paper_0.5b/vectors.pt
+train_examples_path: results/paper_0.5b/train_examples.json
+eval_questions_path: results/paper_0.5b/eval_questions.json
+adapter_dir: results/paper_0.5b/m1_resist_adapter
+results_dir: results/paper_0.5b
