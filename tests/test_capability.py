@@ -18,6 +18,10 @@ def test_parse_limit():
     assert ec.parse_limit("50") == 50
     assert ec.parse_limit(50) == 50
     assert ec.parse_limit("mmlu=15,gsm8k_cot=200") == {"mmlu": 15, "gsm8k_cot": 200}
+    # 'full'/'none'/'all' opt back into the whole test set over a config default
+    assert ec.parse_limit("full") is None
+    assert ec.parse_limit("NONE") is None
+    assert ec.parse_limit("all") is None
 
 
 def test_limit_for():

@@ -57,9 +57,14 @@ def lmeval_python(cfg: dict) -> str:
 
 
 def parse_limit(spec):
-    """None | int | 'N' | 'mmlu=15,gsm8k_cot=200' -> None | int | {task: int}."""
+    """None | int | 'N' | 'mmlu=15,gsm8k_cot=200' -> None | int | {task: int}.
+
+    'full'/'none'/'all'/'' -> None (run the whole test set; the opt-in that beats
+    a fast-subset default set in the config)."""
     if spec is None or isinstance(spec, (int, dict)):
         return spec
+    if spec.strip().lower() in ("full", "none", "all", ""):
+        return None
     if "=" in spec:
         return {p.split("=")[0].strip(): int(p.split("=")[1]) for p in spec.split(",") if p}
     return int(spec)
