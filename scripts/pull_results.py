@@ -24,6 +24,19 @@ TAG = "steering-resistance"
 _STEERED_CONDITIONS = {"steer_train", "steer_heldout", "steer_random", "steer_ortho"}
 
 
+def experiment_repos(author: str) -> list[str]:
+    """Model repos under `author` that are our experiments — matched by the
+    `steer-` naming convention or the steering-resistance tag. Robust across
+    huggingface_hub versions (avoids the removed list_models(tags=...) kwarg)."""
+    out = []
+    for m in HfApi().list_models(author=author):
+        name = m.id.split("/")[-1]
+        tags = getattr(m, "tags", None) or []
+        if name.startswith("steer-") or TAG in tags:
+            out.append(m.id)
+    return sorted(out)
+
+
 def _download(repo_id: str, filename: str) -> Path | None:
     try:
         return Path(hf_hub_download(repo_id, filename, repo_type="model"))
@@ -72,11 +85,11 @@ def main():
     args = ap.parse_args()
 
     if args.author:
-        repos = [m.id for m in HfApi().list_models(author=args.author, tags=TAG)]
+        repos = experiment_repos(args.author)
         if not repos:
-            print(f"no '{TAG}'-tagged models under '{args.author}' (or token can't see them).")
+            print(f"no steer- / '{TAG}' models under '{args.author}' (wrong username, or token can't see them?).")
             return
-        for r in sorted(repos):
+        for r in repos:
             pull_one(r)
     elif args.repo_id:
         pull_one(args.repo_id)
