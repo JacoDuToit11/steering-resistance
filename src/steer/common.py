@@ -28,10 +28,16 @@ def pick_device(cfg: dict) -> torch.device:
 
 
 def pick_dtype(cfg: dict, device: torch.device) -> torch.dtype:
-    # bf16 only on cuda; fp32 elsewhere (bf16 on MPS is flaky)
-    if device.type == "cuda" and cfg.get("dtype", "auto") in ("auto", "bfloat16"):
-        return torch.bfloat16
-    return torch.float32
+    """Model dtype. Explicit config wins (bfloat16/float16/float32) — needed to
+    fit big models on MPS, where 3B fp32 (~12GB) blows a 16GB Mac but bf16 (~6GB)
+    fits. `auto` stays conservative: bf16 on cuda, fp32 elsewhere."""
+    want = str(cfg.get("dtype", "auto")).lower()
+    explicit = {"bfloat16": torch.bfloat16, "bf16": torch.bfloat16,
+                "float16": torch.float16, "fp16": torch.float16,
+                "float32": torch.float32, "fp32": torch.float32}
+    if want in explicit:
+        return explicit[want]
+    return torch.bfloat16 if device.type == "cuda" else torch.float32  # auto
 
 
 def set_seed(seed: int):
