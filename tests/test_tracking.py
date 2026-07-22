@@ -164,3 +164,12 @@ def test_headline():
     assert "steer_heldout@0.8 correct 3%->17%" in h  # uses the TOP alpha present
     # missing M1 clean -> that part is dropped, no crash
     assert headline([S[0], S[3], S[4]]).startswith("steer_heldout")
+
+
+def test_redact_url():
+    from steer.tracking import _redact_url
+    assert _redact_url("https://x-access-token:FAKE-CREDENTIAL@github.com/u/r.git") == "https://github.com/u/r.git"
+    assert _redact_url("https://user:pw@github.com/u/r.git") == "https://github.com/u/r.git"
+    assert _redact_url("https://github.com/u/r.git") == "https://github.com/u/r.git"
+    assert _redact_url("git@github.com:u/r.git") == "git@github.com:u/r.git"
+    assert _redact_url(None) is None
