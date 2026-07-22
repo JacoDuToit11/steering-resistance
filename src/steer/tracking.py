@@ -15,6 +15,7 @@ run proceeds untracked, never crashes.
 import hashlib
 import json
 import platform
+import re
 import shutil
 import subprocess
 import sys
@@ -37,6 +38,15 @@ def _git(args: list[str], cwd: Path) -> str | None:
         return None
 
 
+def _redact_url(url: str | None) -> str | None:
+    """Strip any user:token@ credentials from a remote URL — Colab clones embed
+    the GH token in origin, and this URL gets stored in run_meta.json (which is
+    pushed to HF). Never persist the token."""
+    if not url:
+        return url
+    return re.sub(r"//[^/@]+@", "//", url)
+
+
 def git_info(repo_root: str | Path = REPO_ROOT) -> dict:
     """Commit/branch/dirty state (+ diff text when dirty); all-None outside a repo."""
     root = Path(repo_root)
@@ -49,7 +59,7 @@ def git_info(repo_root: str | Path = REPO_ROOT) -> dict:
         "commit": commit,
         "branch": _git(["rev-parse", "--abbrev-ref", "HEAD"], root),
         "dirty": dirty,
-        "remote": _git(["remote", "get-url", "origin"], root),
+        "remote": _redact_url(_git(["remote", "get-url", "origin"], root)),
         "diff": (_git(["diff", "HEAD"], root) or status) if dirty else None,
     }
 
