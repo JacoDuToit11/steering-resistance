@@ -5,8 +5,7 @@ __pycache__/
 .DS_Store
 .pytest_cache/
 
-# experiment outputs: jsonl/summaries are committed per-run as needed,
-# adapters/checkpoints never (back them up off-box instead)
-results/**/m1_resist_adapter/
+# experiment outputs live on the HF Hub, never in git — run_meta.json can embed
+# tokens (the Colab clone URL), so committing results/ is a secret-leak risk.
+results/
 checkpoints/
-results/**/wandb/
